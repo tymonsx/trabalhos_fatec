@@ -1,0 +1,325 @@
+<!--Atividade 1 - Douglas Santiago Chaves - RA: 1680482022019-->
+<html>
+<title>Website - Atividade 1</title>
+<head>
+    <style>
+        *{
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.header {
+  background-color: #8B0000;
+  color: #ffffff;
+  padding: 15px;
+}
+.img {
+  padding: 0px;
+  padding-top: 8px;
+  text-align: center;
+}
+.buttom {
+  text-align: center;
+  background-color: #ffffff;
+  color: #8B0000;
+  font-size: 15px;
+}
+.buttom:hover {
+  background-color: #8B0000;
+  color: #ffffff;
+  font-size: 16px;
+}
+.buttom2 {
+  text-align: center;
+  background-color: #8B0000;
+  color: #ffffff;
+  font-size: 15px;
+}
+.buttom2:hover {
+  background-color: #ffffff;
+  color: #8B0000;
+  font-size: 16px;
+}
+.aside {
+  background-color: #8B0000;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+
+}
+.footer {
+  background-color: #8B0000;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px;
+}
+.imgright{
+float: right;
+margin: 1px 0 5px 5px;
+padding: 3px;
+border: 1px solid #ffffff;
+}
+        /* Para Celular */
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  /* Para tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* Para desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+        #cabecalho{
+             position:absolute;
+			 width:50%;
+			 background:darkred;
+			 color:black;
+			 height:60px;
+			 top:8px;
+			 left:8px;
+			}
+		#img{
+			 position:fixed;
+			 top:80px;
+			 left:0px;
+			 width:200px;
+			 height:20px;
+			}
+		#coluna1{
+		     position:static;
+			}
+			
+		</style>
+</head>
+<body>
+    <font face="Arial">
+    <div class="row">
+    <div class="col-2 col-s-3 img">
+        <img src='https://sm.ign.com/ign_pt/comics/m/marvel-com/marvel-comics_r53r.png' height='80px' width='px'>
+    </div>
+    <div class="col-10 col-s-9 header">
+        <h2>Os 4 Melhores agentes da S.H.I.E.L.D.</h2>
+    </div>
+    <a href='#harpia'>
+    <div class="col-3 col-s-3 buttom">
+        <b>Harpia</b>
+    </div>
+    </a>
+    <a href='#gaviao'>
+    <div class="col-3 col-s-3 buttom">
+        <b>Gavião Arqueiro</b>
+    </div>
+    </a>
+    <a href='#viuva'>
+    <div class="col-3 col-s-3 buttom">
+        <b>Viúva Negra</b>
+    </div>
+    </a>
+    <a href='#tremor'>
+    <div class="col-3 col-s-3 buttom">
+        <b>Tremor</b>
+    </div>
+    </a>
+    <br>
+    <div class="col-12"></div>
+    <div class="col-9 col-s-12">
+		<h1>
+			 <strong>
+			  <span style="color:red;">
+				Harpia<a name="harpia"></a>
+			  </span>
+			 </strong>
+		</h1>
+		<br>
+		
+		<h3>Origem</h3>
+		<img src='http://1.bp.blogspot.com/-0jS8JK5sOY4/VUUwDnd3ZvI/AAAAAAAAPWo/8Szm1fq-ya0/s1600/mockingbird_by_zabzarock-d57qx0u.png' height='300px' width='px' align="middle" class="imgright">
+		Barbara sempre foi uma garota muito inteligente e se destacava nas aulas e competições de ginástica do colégio. Saindo do colégio ela se formou no Instituto de Tecnologia da Geórgia e com um PhD em biologia começou a trabalhar com a Drª. Wilma Calvin em um projeto governamental para achar uma maneira de recriar o soro do super soldado.<br>
+        <br>
+A sua história acadêmica e ficha exemplar chamaram atenção da <a href="#shield">S.H.I.E.L.D.</a> onde foi convidada a treinar para ser uma agente, se mostrando excelente tanto nos testes físicos como em espionagem. Durante um período, após a queda da S.H.I.E.L.D., Barbara Morse trabalhou como agente dupla na <a href="#hydra">HYDRA</a>, sendo considerada a primeira Víbora da HYDRA até seu disfarce ser comprometido e a mesma voltar a resistência da S.H.I.E.L.D., ajudando a derrubar postos da organização oposta.
+    
+<h3>Poderes e Habilidades</h3>
+Bobbi é especialista em bioquímica e foi classificada pela S.H.I.E.L.D. como mestre espiã, além de ser fluente em espanhol.<br>
+    <br>
+Morse também é considerada uma mestre acrobata, especialista em artes marciais e várias formas de combate corpo-a-corpo, incluindo Kung Fu e Tae Kwon Do.<br>
+    <br>
+Devido a fórmula que foi injetada nela, Bobbi Morse ganhou um grau de força sobre-humana, cuja extensão é desconhecida, sendo forte o suficiente para amassar e quebrar aço com as próprias mãos; além de também ter sua agilidade aprimorada, seu fator de cura também foi aprimorado, podendo curar todas as feridas catastróficas que a colocavam em estado comatoso.<br>
+    <br>
+Seu processo de envelhecimento foi aparentemente interrompido para sempre.<br>
+    <br>
+Ela também está familiarizada com uma ampla gama de armas, utiliza bastões acopláveis como arma principal e binóculo protetores que a permitem enxergar no escuro.<br><br>
+    <hr color="red">
+    </div>
+    <div class="col-3 col-s-12">
+    <a name="shield"></a>
+    <div class="aside">
+      <h2>O que é S.H.I.E.L.D.?</h2>
+      <img src='https://observatoriodocinema.uol.com.br/wp-content/uploads/2016/12/shield.jpg' height='100px' width='px'>
+      <p>A <b>Superintendência Humana de Intervenção, Espionagem, Logística e Dissuasão</b>, mais conhecida por seu anacronismo S.H.I.E.L.D., foi originalmente uma agência de inteligência militar e anti-terrorista extra-governamental dos Estados Unidos.</p>
+    </div>
+  </div>
+  <div class="col-3 col-s-12">
+    <a name="hydra"></a>
+    <div class="aside">
+      <h2>O que é a HYDRA?</h2>
+      <img src='https://johto.legiaodosherois.com.br/wp-content/uploads/2021/03/legiao__mtJ9sVP7oaX.jpg' height='120px' width='px'>
+        <p>Hydra é uma organização terrorista fictícia da Marvel Comics. O nome cita a Hidra de Lerna, bem como o lema "Uma cabeça cortada, duas surgem", evocando a resiliência da organização. Frequentemente os capangas da Hidra usam roupas verdes evocando serpentes.</p>
+    </div>
+  </div>
+    <div class="col-9 col-s-12">
+		<h1>
+			 <strong>
+			  <span style="color:red;">
+				Gavião Arqueiro<a name="gaviao"></a>
+			  </span>
+			 </strong>
+		</h1>
+		<br>
+		
+		<h3>Origem</h3>
+		<img src='https://delfos.net.br/wp-content/uploads/2017/05/245839-03-05-17-51.jpg' height='350px' width='px' align="middle" class="imgright">
+		Iniciou sua carreira como vilão do Homem de Ferro e nessa época se envolveu com a Viúva Negra, mas o relacionamento fracassou. Posteriormente se regenerou e entrou para os <a href="#vingadores">Vingadores</a>, na mesma época em que o fizeram Mercúrio e a Feiticeira Escarlate. O líder era o Capitão América. Criou muitos problemas para o Capitão, pelo seu temperamento rebelde e atração por Wanda, romance que não era aceito pelo irmão dela, Pietro. Procurando ganhar maior poder e se destacar na equipe, assumiu o uniforme e os poderes de Golias (uma das versões do Homem-Formiga) durante um certo tempo. Deixou temporariamente a equipe quando a Feiticeira Escarlate se casou com o Visão. Depois ele próprio se casaria com a heroína Harpia. O casal se juntaria aos Vingadores da Costa Oeste, onde tiveram várias brigas.
+    
+<h3>Poderes e Habilidades</h3>
+Mestre Arqueiro: Barton já treinou a si mesmo para se tornar um mestre arqueiro especializado na utilização de curvas regulares, arcos, arcos compostos, e bestas com quase perfeita exatidão. Ele é capaz de disparar várias flechas em um único alvo em poucos segundos, atingindo vários alvos em alguns golpes rápidos e atingindo diretamente alvos pequenos em maior distância. Barton até tem sido conhecido por ter atingido uma maçã no centro. Ele pratica um mínimo de duas horas por dia para manter suas habilidades aprimoradas.<br><br>
+Atirador Especialista: Ele possui visão muito forte, e sua precisão é praticamente infalível; Ele foi treinado em sua juventude por Trick Shot jogando lâminas, bolas e bumerangues. Ele agora tem precisão quase perfeita com qualquer arma apontada ou lançada. Ele pode atirar objetos com extrema rapidez e precisão, tanto em pontaria direta quanto em rebotes / interações complicadas.<br><br>
+Acrobacias: Barton possui excepcional resistência humana. Ele é atlético, com muitos bons reflexos e agilidade. Isso, combinado com o treinamento como aerialista e acrobata, o que torna ele capaz de inúmeras manobras acrobáticas difíceis.<br><br>
+Mestre das Artes Marciais: Barton é um excelente artista marcial, depois de ter sido treinado em várias formas por Capitão América, que é provavelmente o maior combatente corpo-a-corpo do mundo. Em sua primeira missão com o bando de renegados dos Novos Vingadores liderados por Luke Cage, Clint provou que não é porque ele tem um arco e flecha que não aprendeu artes marciais. Durante toda a batalha contra a Elektra e A Mão, ele demonstrou grande habilidade marcial, aguentado combates contra quase infinitas hordas de ninjas. Isso lhe rendeu um elogio e respeito de seu companheiro de equipe Punho de Ferro, um dos melhores artistas marciais do mundo.<br><br>
+Grande Estrategista: Como mostra a sua liderança dos Vingadores da Costa Oeste e dos Thunderbolts, Barton é um estrategista, tático, e comandante de campo altamente competente.<br><br>
+Armas de Proficiência: Embora não seja conhecida; a utilização de armas brancas, reflexos incríveis e coordenação olho-mão de Barton lhe permitem dominar facilmente a maioria das armas. Ele também recebeu treinamento em esgrima durante a sua juventude do Espadachim original, que foi considerado um dos maiores especialistas em espadas de combate que o mundo já conheceu. Barton é habilidoso com espadas, facas, nunchakus, bastões e é uma das poucas pessoas capazes de tratar adequadamente o escudo do Capitão América.<br><br>
+Trilíngue: Clint não é só fluente em inglês, a sua língua natural, mas também em italiano e na língua de sinais americana.<br><br>
+    <hr color="red">
+    </div>
+    <div class="col-3 col-s-12">
+    <a name="vingadores"></a>
+    <div class="aside">
+      <h2>Quem são os Vingadores?</h2>
+      <img src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/79484a71-9188-4973-b391-05510394986e/dbq1xxs-61b5c5c7-3657-4349-9d1c-0a3e28028242.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc5NDg0YTcxLTkxODgtNDk3My1iMzkxLTA1NTEwMzk0OTg2ZVwvZGJxMXh4cy02MWI1YzVjNy0zNjU3LTQzNDktOWQxYy0wYTNlMjgwMjgyNDIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wZWmpqIfC27UPMfhp3Z5R8INrtTkkR76LpvpgyLrpts' height='100px' width='px'>
+        <p>Os Vingadores eram um time de indivíduos extraordinários, sejam com super-poderes ou outras características especiais. Seu propósito é proteger a estabilidade global de ameças internas ou extraterrestres.</p>
+    </div>
+  </div>
+    <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>Gosta do universo Marvel?</h2>
+      <a href='#inscrição'>
+    <div class="buttom2">
+        <b><br>Torne-se um Mebro da comunidade!<br><br></b>
+    </div>
+    </a>
+    </div>
+  </div>
+    <div class="col-9 col-s-12">
+		<h1>
+			 <strong>
+			  <span style="color:red;">
+				Viúva Negra<a name="viuva"></a>
+			  </span>
+			 </strong>
+		</h1>
+		<br>
+		
+		<h3>Origem</h3>
+		<img src='https://pm1.narvii.com/6518/ae2cbe063dd6c4bae681e4b0f4a2a895ec55e17a_hq.jpg' height='300px' width='px' align="middle" class="imgright">
+		Existem vários relatos do início da vida de Romanoff. Um relato diz que o Partido Nazista colocou fogo no edifício onde Natasha vivia em Stalingrad (Volgogrado atualmente) e sua mãe a atirou pela janela para um soldado russo antes de morrer no fogo. O nome do soldado era Ivan Petrovitch e ele cuidou de Natasha por toda a sua vida, permanecendo ao seu lado como seu pai adotivo. e a apresentou para o Tentáculo em Madripoor. Lá ela viria a se tornar a Mestre Assassina, até que o Capitão América, Logan e Ivan a salvaram. Enquanto Natasha crescia e amadurecia, ela provou ser uma incrível atleta e estudiosa, além de ganhar distinção na URSS como bailarina.
+    
+<h3>Poderes e Habilidades</h3>
+A Viúva Negra foi aprimorada pela biotecnologia que torna seu corpo resistente ao envelhecimento e doenças e cura acima da taxa humana; bem como o condicionamento psicológico que suprime sua memória de eventos verdadeiros em oposição aos implantados do passado sem o auxílio de drogas supressoras de sistema especialmente projetadas.<br><br>
+
+Os glóbulos brancos em seu corpo são eficientes o suficiente para lutar contra qualquer micróbio, corpo estranho e outros de seu corpo, mantendo-a saudável e imune à maioria, senão a todas as infecções, doenças e distúrbios.<br><br>
+
+Sua agilidade é maior do que a de uma medalha de ouro olímpica. Ela pode coordenar seu corpo com equilíbrio, flexibilidade e destreza facilmente.<br><br>
+
+Romanoff tem um intelecto talentoso. Ela exibe uma afinidade fantástica com a manipulação psicológica e pode mascarar suas emoções reais perfeitamente. Como Steve Rogers e Clint Barton, ela possui a capacidade de processar rapidamente vários fluxos de informações (como avaliação de ameaças) e responder rapidamente às mudanças nas situações táticas.
+<br><br>
+A Viúva Negra é uma atleta de classe mundial, ginasta, acrobata, trapezista capaz de numerosas manobras e feitos complexos, sendo uma artista marcial especialista (incluindo jiu-jitsu, aikido, boxe, judô, caratê, savate, ninjutsu, múltiplos estilos de kung fu e kenpō, bem como a arte marcial russa (sambo), Romanoff também é uma atiradora e especialista em armas, além de ter extenso treinamento em espionagem. Ela também é uma bailarina talentosa.<br><br>
+
+Romanoff é uma estrategista especialista. Ela é uma estrategista tática e comandante de campo muito eficaz. Ela liderou os Vingadores e até a S.H.I.E.L.D. em algumas ocasiões.<br><br>
+    <hr color="red">
+    </div>
+    
+    <div class="col-9 col-s-12">
+		<h1>
+			 <strong>
+			  <span style="color:red;">
+				Tremor<a name="tremor"></a>
+			  </span>
+			 </strong>
+		</h1>
+		<br>
+		
+		<h3>Origem</h3>
+		<img src='https://i.pinimg.com/474x/94/6e/7e/946e7eedb01fe7a609e2bcca660beb00--marvel-girl-marvel-heroes.jpg' height='300px' width='px' align="middle" class="imgright">
+		Daisy Johnson é uma Inumana com habilidades sísmicas, é a filha ilegítima de Calvin Zabo, o supervilão conhecido como Mister Hyde. Ela possui um certificado de segurança "Nível 10", o único agente conhecido além de Fury, Viúva Negra (Natasha Romanoff) e Phillip Coulson (Este apenas na Série Agents of S.H.I.E.L.D.).<br><br>
+
+Durante os acontecimentos da Invasão Secreta, Daisy é convocada por Nick Fury para recrutar descendentes de vilões e heróis para formar os Guerreiros Secretos e ajudá-los contra a ameaça dos Skrulls.<br><br>
+
+Recentemente os quadrinhos seguiram os mesmos passos da personagem na série televisiva Agents of S.H.I.E.L.D., onde descobre ser inumana, também sendo chamada pelo nome Skye.
+    <br><br>
+<h3>Poderes e Habilidades</h3>
+Metabolismo Inumano: Daisy possui certas habilidades físicas superiores às dos melhores atletas humanos. Seu metabolismo Inumano lhe deu um tempo de reação, força, resistência e velocidade ligeiramente superiores a de espécimes físicos mais aprimorados da raça humana.<br><br>
+Manipulação de Vibrações: Daisy é capaz de controlar as vibrações presentes na matéria, com isso, ela consegue gerar ondas sísmicas que podem produzir efeitos semelhantes aos de terremotos. Seu treinamento com Fury lhe permitiu utilizar seu poder com mais precisão, fazendo com que objetos direcionados vibrem separadamente de dentro para fora. Isso é demonstrado quando ela foi capaz de impedir a detonação de uma bomba de antimatéria implantada no corpo de Lucia von Bardas, destruindo sua fonte de alimentação, e explodindo o coração de Wolverine, enquanto em seu peito, para deter um ataque furioso à Fury. Daisy recentemente foi capaz de usar seus poderes sem a ajuda de suas manoplas, com a mesma capacidade de controle que tem quando as usa.<br><br>
+Imunidade a Vibrações: Daisy é imune a quaisquer efeitos nocivos das vibrações que cria.<br><br>
+Blindagem Psíquica: ela também possui uma forma de blindagem psíquica.<br><br>
+    <hr color="red">
+    </div>
+    </div>
+    <div class="footer">
+        <a name="inscrição"></a>
+        <img src='http://25.media.tumblr.com/225c69b63a4c3f692201569cba364f6f/tumblr_mf4ce0m9u51rlkicro1_500.gif' height='200px' width='px'>
+        <h2>Increva-se e se torne um membro do clube Marvel!</h2>
+        <form name='frm' method='GET' action='../../../../Working%20files/DOUGLAS%20SANTIAGO%20CHAVES/Exerc�cio%20reposi��o%20-%20Website%20de%20p�gina%20�nica/aula1.php'>
+	<fieldset align="left"><legend><h3>Informações</h3></legend>
+	Nome <input type=’text’ name='name' size='20px'><br><br>
+	E-Mail <input type=’text’ name='email' size='30px'><br><br>
+	Sexo:<label> masculino <input type='radio' name='sexo' value='M'></label>
+        	<label> feminino   <input type='radio' name='sexo' value='F'></label><br><br>
+    Deseja receber notificações sobre novas matérias da Marvel?<br><label> Sim <input type='radio' name='not' value='Y'></label>
+        	<label> Não <input type='radio' name='not' value='N'></label><br><br>
+	</fieldset>
+	<fieldset>
+		<input type='submit' name='grv' value='Enviar'>
+		<input type='reset' name='lmp' value='Limpar'>
+	</fieldset>
+</form>
+    </div>
+    
+    
+
+	</font>
+</body>
+</html>

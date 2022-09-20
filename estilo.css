@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+   
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#menu{
+    transition: height 1s;
+    text-align: center;    
+    background: DarkSeaGreen;
+    padding-top: 2px;
+}
+#menu a{
+    position: absolute;
+    top:0px;
+    color: green;
+    font-size: 24px;
+    text-decoration: none;
+    transition: position 1s;
+}
+
+.aberto{
+    height: 25px;
+}
+
+.aberto select{
+    display: inline;
+}
+.aberto a {
+    display: none;
+    top: 0px;
+}
+
+.fechado {
+    height: 0px;    
+}
+
+.fechado select {
+    display: none;
+}
+
+.fechado a {
+    display: inline;
+    top: -20px;
+}

@@ -1,0 +1,383 @@
+/* 
+ * Foi utilizado display: flex na maioria das classes, sendo uma ferramenta de facil uso onde trabalha com flex itens
+   e disponibiliza varias funções para manipular a posição destes itens como por exemplo: align items, justify content,
+   flex-wrap, flex-direction 
+ */
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #050110;
+}
+
+.container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
+}
+
+header {
+  background-color: darkred;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 88px;
+  width: 100%;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+  letter-spacing: 1.5px;
+}
+
+header ul li a {
+  color: white;
+}
+
+header nav {
+  width: 100%;
+  max-width: 800px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 70px;
+  margin: 20px 0;
+}
+
+.logo img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.s-slides {
+  background-color: #050110;
+  overflow: hidden;
+}
+
+.s-slides .title {
+  padding: 20px;
+  background: #050110;
+  color: white;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #050110;
+}
+
+.swiper-pagination {
+  position: initial;
+  display: block;
+  background-color: #050110;
+  padding-bottom: 100px;
+}
+
+.swiper-pagination-bullet {
+  background-color: white;
+}
+
+.swiper-pagination-bullet-active {
+  background: darkred;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.s-bio {
+  background: url(img/20220622_07442356903.jpg) no-repeat;
+  background-size: cover;
+  height: 730px;
+}
+
+
+.s-bio .container{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  z-index: 10;
+}
+
+.s-bio button{
+  display: none;
+  z-index: 2022;
+  max-width: 50px;
+  border-radius: 5px;
+  transform: rotate(-90deg);
+  justify-content: center;
+  cursor: pointer;
+}
+
+.s-bio button.active {
+  position: fixed;
+  display: block;
+  bottom: 30px;
+  right: 30px;
+}
+
+.s-bio button a {
+  display: flex;
+}
+
+.s-bio button img {
+  width: 100%;
+}
+
+.s-bio .image {
+  width: 100%;
+  max-width: 500px;
+  padding: 60px 0 0 60px;
+}
+
+.s-bio .image img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 1px 7px 20px 3px;
+}
+
+.s-bio .texto {
+  width: 100%;
+  max-width: 500px;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 30px;
+  border: 1px solid black;
+  background: rgba(0, 0, 0, 0.726);
+}
+
+.s-card-featured {
+  background-color: #050110;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-bottom: 170px;
+}
+
+.btn-primary {
+  font-family: 'Sora', sans-serif;
+  display: inline-block;
+  padding: 11px 34px;
+  background-color: darkred;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  border-radius: 2px;
+  transition: all 0.3s;
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.s-card-featured p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.s-card-featured h2 {
+  color: white;
+}
+
+.s-card-featured .second-area {
+  margin-top: 90px;
+  padding: 40px 0px;
+  border-bottom: 1.2px solid rgba(255, 255, 255, 0.199);
+  border-top: 1.2px solid rgba(255, 255, 255, 0.199);
+}
+
+.s-card-featured .second-area .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.s-card-featured .second-area .all-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  place-content: center;
+}
+
+.s-card-featured .second-area .all-images .image {
+  max-width: 176px;
+  max-height: 112px;
+  color: #1C1D1F;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-card-featured .second-area .all-images .image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.s-card-featured .second-area .all-images .image:hover {
+  transform: scale(1.8);
+}
+
+.s-contato{
+  background: darkred;
+  padding: 80px 0;
+  text-align: center;
+  height: 630px;
+  display: flex;
+}
+
+.inner-width{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.s-contato h1{
+  font-size: 20px;
+  color: white;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+
+.nome, .email, .mensagem {
+  background: none;
+  border:none;
+  outline: none;
+  border-bottom: 1px solid;
+  color: white;
+  padding: 10px 6px;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.nome{
+  float: left;
+  width: 270px;
+}
+
+.email{
+  float: right;
+  width: 270px;
+}
+
+.mensagem{
+  min-width: 100%;
+  max-width: 100%;
+}
+
+
+.s-contato .submit{
+  background: none;
+  color: salmon;
+  border: 1px solid salmon;
+  padding: 12px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+
+.s-contato .submit:hover{
+  background: salmon;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .s-bio {
+    height: 1172px;
+  }
+
+  .s-bio .image {
+    padding: 0;
+  }
+  
+  .s-bio .texto {
+    max-width: 800px;
+  }
+  
+  .s-bio .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .s-card-featured .second-area .top {
+    flex-direction: column;
+  }
+  
+  .s-card-featured .second-area .top a {
+    margin-top: 25px;
+  }
+
+  .s-card-featured {
+    padding-bottom: 110px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .nome, .email{
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .s-card-featured .second-area .all-images {
+    gap: 40px;
+  }
+
+  .s-card-featured .second-area .all-images .image {
+    max-height: 160px;
+  }
+
+  .s-card-featured {
+    padding-bottom: 40px;
+  }
+}
+
+
+/* Pseudo-elementos que permitem modificar a scrollbar (barra de rolagem) 
+ * Webkit são mecanismos de renderização reconhecidos pelo Chrome e o Safari
+ */
+::-webkit-scrollbar{
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track{
+  background: #000000;
+  border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background: darkred;
+  border-radius: 5rem;
+}
+
+::-webkit-scrollbar-track-piece{
+  background: black;
+}

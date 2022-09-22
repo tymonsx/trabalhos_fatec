@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- link responsavel por trazer os recursos pertencentes ao swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Site Pessoal</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/1639576053712.jpg" alt="">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#bio">Apresentação</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#slides">Instituição de ensino</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="s-bio" id="bio">
+    <div class="container">
+      <div class="image">
+        <img src="img/171999733_702896120913935_4564128099380558651_n.jpg" alt="">
+      </div>
+      <div class="texto">
+        <h1>Rian Carlos Soares Fernandes</h1><br>
+  
+        - Disponível para estagiar na parte da tarde. <br><br>
+        - Inglês técnico para leitura, capaz de consumir conteúdo na língua estrangeira <br><br>
+  
+        Estudando atualmente: HTML5 / JavaScript / CSS3
+        GitHub: https://github.com/RianCarlos99 <br><br>
+  
+        Graduando-se em ADS e almejo seguir carreira na área de programação, tanto front-end quanto back-end. Possuo forte desejo de conhecimento e desenvolvimento profissional afim de trazer resultados promissores a empresa e por consequência, o engrandecimento do meu perfil.
+      </div>
+    </div>
+    <button id="btn-fixed-js"><a href=""><img src="img/next.png" alt=""></a></button>
+  </section>
+  
+  
+  <section class="s-card-featured" id="galeria">
+    <div class="container">
+      <div class="second-area">
+        <div class="top">
+          <div class="title">
+            <h2>Galeria</h2>
+          <p>Nada melhor do que fotos que recordam nossos melhores momentos e memórias!</p>
+          </div>
+          <a href="" class="btn-primary">ver toda a galeria</a>
+        </div>
+  
+        <div class="all-images">
+          <div class="image">
+            <img src="img/171999733_702896120913935_4564128099380558651_n.jpg" alt="">
+          </div>
+          <div class="image">
+            <img src="img/cam_vera.jpeg" alt="">
+          </div>
+          <div class="image">
+            <img src="img/camila.jpeg" alt="">
+          </div>
+          <div class="image">
+            <img src="img/eu.jpeg" alt="">
+          </div>
+          <div class="image">
+            <img src="img/pao.jpeg" alt="">
+          </div>
+          <div class="image">
+            <img src="img/WhatsApp Image 2022-09-20 at 09.58.07 (1).jpeg" alt="">
+          </div>
+          <div class="image">
+            <img src="img/WhatsApp Image 2022-09-20 at 09.58.07.jpeg" alt="">
+          </div>
+          <div class="image">
+            <img src="img/WhatsApp Image 2022-09-20 at 09.58.08 (4).jpeg" alt="">
+          </div>
+          <div class="image">
+            <img src="img/WhatsApp Image 2022-09-20 at 09.58.09 (2).jpeg" alt="">
+          </div>
+          <div class="image">
+            <img src="img/eu_vera.jpeg" alt="">
+          </div>
+          <div class="image">
+            <img src="img/WhatsApp Image 2022-09-20 at 09.58.09 (1).jpeg" alt="">
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s-slides" id="slides">
+    <div class="container">
+      <div class="title">
+        <h1>Instituição de Ensino Fatec</h1>
+      </div>
+    </div>
+    <div class="swiper mySwiper swiper-h">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/20220622_07442356903.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/fatec-1536x1021.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/album-3-8.jpg" alt=""></div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <section class="s-contato" id="contato">
+      <div class="inner-width">
+        <h1>Entre em contato comigo!</h1>
+        <input type="text" class="nome" placeholder="Seu nome">
+        <input type="email" class="email" placeholder="Seu e-mail">
+        <textarea rows="1" placeholder="Mensagem" class="mensagem"></textarea>
+        <input type="submit" value="Enviar" class="submit" onclick="window.alert('Dados enviados ao Host')+location.reload()+window.scrollTo({top:0})">
+    </div>
+  </section>
+  <script src="script.js"></script>
+
+  <!-- script responsavel por trazer os recursos pertencentes ao swiper e faze-lo funcionar -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Manipula as funcionalidades do Swiper como tempo de transição e interatividade -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 50,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      simulateTouch: true,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false,
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+/*deixa o comportamento da barra de rolagem mais suave*/
+html{
+	scroll-behavior: smooth;	
+}
+/*muda o fonte do documento inteiro e remove a margem padrão da tag body*/
+body{
+	font-family:Trebuchet MS; 	
+	margin:0;
+}
+/*define todos os divs que tenham a palavra secao no id fiquem do tamanho da tela*/
+div[id*='secao']{
+	height:100%;
+	width:100%;
+}
+/*define que todo h2 das secaoes tenha um espaçamento no topo do tamanho do cabeçalho, caso contrário o título ficaria atras do cabeçalho*/
+div[id*='secao'] h2{	
+	padding-top:100px;
+}
+/* define todas as tags p com alinhamento justificado e cria um padding na direita e  esquerda */
+p{
+	text-align:justify;
+	padding:0px 10px;
+}
+/*cabeçalho com position fixed para ser acessivel por todo o documento*/
+#cabecalho{
+	background:#a50000;
+	width:100%;
+	height:100px;
+	text-align:center;
+	position:fixed;
+	top:0px;
+	left:0px;	
+}
+/* define o tamanho e cor da fonte do título do cabeçalho */
+#cabecalho h1{
+	color:#000000;
+	font-size:28px;
+	font-style: monospace;
+}
+/*#logoM{
+	float: left;
+	width: 165;
+	height: 78.75;
+}*\
+/* define o tamanho do botão hamburguer posicionado a esquerda e invisível */
+#hamburguer{
+	width:30px;
+	float:left;
+	display:none;
+}
+
+/* define o tamanho da imagem do hamburguer */
+#hamburguer img{
+	width:20px;
+}
+/* ajusta os li do menu para ficarem em linha e com um espaçamento entre si*/
+
+#menu li{
+	list-style:none;
+	display:inline;
+	padding:5px;
+}
+/* define o estilo dos links do menu */
+#menu a:link{
+	color:#FFE2A8;
+	font-weight:bold;
+	text-decoration:none;
+	border:solid 3px #5D719E;
+	background:#fd7e16;
+}
+#menu a:visited{
+	color:#FFE2A8;
+	border:solid 3px #fd7e16;
+}
+#menu a:hover{
+	color:#FFE2A8;	
+	background:#A1AECB;
+	border:solid 3px #A1AECB;
+}
+#menu a:active{
+	color:#FFE2A8;	
+}
+
+/* define o estilo da seção 1*/
+#secao1{
+	background:#fd7e16;
+}
+/* define o estilo do título da seção 1*/
+#secao1 h2{
+	background:#a50000d5;
+	text-align: center;
+}
+#texto1{
+	padding-top: 1%;
+	padding-left: 20%;
+	padding-right: 20%;
+	text-align:center;
+	line-height: 100%;
+}
+/* define o estilo da seção 2*/
+#secao2{
+	background:#fd7e16
+}
+/* define o estilo do título da seção 2*/
+#secao2 h2{
+	background:#a50000d5;
+	text-align:center;
+}
+#Fogaça{
+	padding-left: 34.15%; 
+	/* display:block; Adicionar o Block para cada img ficar em 1 linha */
+ 	margin: 0px auto;
+}
+#JacEhel{
+ 	margin: 0px auto;
+	width: 200;
+	height: 308;
+}
+#Titulo{
+	text-align: center;
+}
+#texto{
+	padding-left: 20%;
+	padding-right: 20%;
+	text-align:center;
+	line-height: 100%;
+}
+/* define o estilo da seção 3*/
+#secao3{
+	background:#fd7e16;
+}
+/* define o estilo do título da seção 3*/
+#secao3 h2{
+	background:#a50000d5;
+	text-align:center;
+}
+h4{
+	text-align: center;
+}
+#Pratos1{ 
+	padding-top: 1%;
+	padding-left: 37.80%; 
+	margin: 0px auto;
+	width: 150;
+	height: 231;
+}
+#Pratos{ 
+	margin: 0px auto;
+	width: 150;
+	height: 231;
+}
+/* define o estilo da seção 4*/
+#secao4{
+	background:#fd7e16;
+}
+/* define o estilo do título da seção 4*/
+#secao4 h2{
+	background:#a50000d5;
+	text-align:center;
+}
+#trofeu{
+	display: block;
+	margin: 0px auto;
+	width: 538;
+	height: 306.5;
+}
+/* em telas de até 600px de largura o menu desaparece e aparece o botão hamburguer */
+@media only screen and (max-width: 600px) {
+	#menu{
+		display:none;
+	}
+	#hamburguer{
+		display:block;
+	}
+}

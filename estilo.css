@@ -30,7 +30,7 @@ body{
     font-size: 30px;
     text-decoration: none;
 }
-
+/*classe aberto define os a altura do menu e aparece com o select e desaparece com o link que abre o menu */
 .aberto{
     height: 25px;
 }
@@ -42,7 +42,7 @@ body{
     display: none; 
     
 }
-
+/*classe fechado define os a altura do menu como 0 e desaparece com o select e aparece com o link que abre o menu */
 .fechado {
     height: 0px;    
 }

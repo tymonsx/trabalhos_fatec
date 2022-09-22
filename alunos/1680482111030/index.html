@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALÃO DE BELEZA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icon/salao.png">
+
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <ion-icon name="chevron-up-outline"></ion-icon> 
+    </div>
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">SALÃO DE BELEZA</a></div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+              </div>
+            <ul class="menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Saiba Mais</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Agende</a></li>
+                <li><a href="#extends">Marcas Utilizadas</a></li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Seja Bem-Vindo (a)</div>
+                <div class="text-2">Ao Nosso Espaço de Beleza</div>
+                <a href="#contact">Agende</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">Saiba Mais</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="./images/icone-de-salao-de-beleza.jpg" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">Somos uma rede de Salões</div>
+                    <p>Um centro de beleza, estética e clínica médica voltado para a sua saúde e bem-estar! Aqui cuidamos de pessoas, tratando seu interior para que ele empodere o seu exterior! Por isso, criamos o conceito Beleza 360°: em um único espaço você terá +SAÚDE com uma equipe médica de ponta e +BELEZA com os nossos conceituados artistas, porque sabemos que no final do dia, tudo o que você quer é + de tudo, inclusive aquilo que nos é +precioso: +TEMPO!</p>
+                    <a href="#">Mais Informações</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Serviços</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Cabelos (Em Geral)</div>
+                        <p>Progressiva, Loiros em Geral, Cacheadas e Tintura.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Sobrancelha</div>
+                        <p>Desing de Sobrancelha, Henna e Micropigmentação.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Unhas</div>
+                        <p>Esmaltação e Cutilagem, extenção e aplique de unhas postiças.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Agende</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Fale Conosco</div>
+                    <p>Nossos profissionais são especialistas em sua área de atuação, proporcionando a nossas clientes resultados satisfatórios. Agende agora seu harario antes que as vagas se esgotem.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <div class="info">
+                                <div class="head">Nome</div>
+                                <div class="sub-title">Pamela Gomes Alexandre</div>
+                            </div>
+                       </div>
+                       <div class="row">
+                            <ion-icon name="earth-outline"></ion-icon>
+                            <div class="info">
+                                <div class="head">Endereço</div>
+                                <div class="sub-title">São Paulo, SP</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <div class="info">
+                                <div class="head">Telefone</div>
+                                <div class="sub-title">11 9 1345-6789</div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Mensagem</div>
+                    <form action="#">
+                        <script>    
+                            function empty(){
+                                if (document.getElementById('nm').value == "" ){
+                                    alert("Digite aqui");
+                                }else if (document.getElementById('em').value == "" ){
+                                    alert("Digite aqui");
+                                }else if (document.getElementById('sm').value == "" ){
+                                    alert("Digite aqui")
+                                }else if (document.getElementById('es').value == "" ){
+                                    alert("Digite aqui")
+                                }else 
+                                    alert("Contato enviado com sucesso!!")
+                            }
+                            
+                        </script>
+                        
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" id="nm" placeholder="Nome" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" id="em" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="field">
+                                <input type="text" id="sm" placeholder="Sobrenome" required>
+                                
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" id="es" placeholder="Escrever..." required></textarea>
+                            </div>
+                            
+                            <div class="button">
+                                <input type="submit" onclick="empty();"value ='Enviar'>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="extends" id="extends">
+        <div class="max-width">
+            <h2 class="title">Marcas Utilizadas</h2>
+            <div class="extends-content">
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Kiss New York</div>
+                        <img src="./images/kissnewyork.png" alt="">
+                        <p>Marca líder mundial em cosméticos. Batom, Maquiagem, Rímel, Base, Acessórios de Cabelo, Paleta de Sombra e tudo de Make.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Kerastase</div>
+                        <img src="./images/kerastase.jpeg" alt="">
+                        <p>Kérastase continua criando produtos personalizados que satisfazem um simples desejo: ter um cabelo fabuloso.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Risque</div>
+                        <img src="./images/risque.jpg" alt="">
+                        <p>Pra cada mulher que tem dentro da gente, existe uma cor Risqué. Uma não, mais de 100. Conheça cada uma delas conosco.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <div class="text">Impala</div>
+                        <img src="./images/impala.webp" alt="">
+                        <p>Tudo para deixar suas unhas fortes e saudáveis! Esmalte, Base, Verniz Extra Brilho, Removedor de Esmalte, Esmalte Infantil.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

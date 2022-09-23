@@ -1,0 +1,449 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+    scroll-behavior:smooth;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: #FFE4C4;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right:0;
+    display: flex; /*uso do flex para melhor disposição dos elementos*/
+    align-items: center;/*alinhamento dos elementos*/
+    justify-content: space-between;/*Espaço entre os elementos*/
+    z-index: 1000;
+    background: transparent;
+    padding: 25px 5%;
+}
+.nomelogo{
+    color:#F4A460;
+    font-weight: bold;
+    letter-spacing: 1px;/*espaço entre as letras*/
+}
+.pet{
+    color:brown;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.navbar{
+    display: flex;
+    
+}
+.navbar li{
+    position:relative;
+}
+.navbar a{
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.navbar a::after{
+    content: ''; /*Necessário para fazer a estilização do "vai e vem" no navbar*/
+    position: absolute;
+    width:0;
+    height: 2px;
+    background: red;
+    left:0;
+    bottom:-4px;
+    transition: ease .40s; /* transição que começa lenta, depois fica rápida, e no final fica lenta novamente */
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+#hamburguer-menu{
+    font-size: 2rem;
+    color:black;
+    cursor:pointer;
+    display:none /*irá aparecer somente na responsividade*/
+}
+.button-header{
+    padding:0 20px;
+    height: 40px;
+    display: inline-block;
+    line-height: 42px;
+    background-color: #FF7F50;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all .30s; /*Transição aplicado para todas as propriedades*/
+}
+.button-header:hover{
+    transform: translateY(-5px); /*No eixo Y, irá subir 5px o botão, ao passar o mouse*/
+}
+section{
+    padding:120px 15%;
+}
+#home{
+    height: 100vh; /*vh equivale a 1/100 da tela (altura), se eu passar 100 equivale a 100% */
+    width: 100%;
+    background: url(./img/fundo_header.png);
+    background-position: center;
+    position: relative;
+    display:grid; /*Outro tipo de display, parecido com o flex*/
+    grid-template-columns: (1,1fr);/*Irá ter 1 coluna, com uma fração de tela cada uma*/
+    align-items: center;
+    
+}
+.text-home h1{
+    margin:20px 0px 20px;
+    font-size: 4.5rem;
+    color:#F4A460;
+
+}
+.text-home h3{
+    font-size:28px;
+    margin-bottom: 55px;
+}
+.text-home h4{
+    font-size: 15px;
+    color:#5a5d61
+}
+.newslatter form{
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+}
+.newslatter form input:first-child{/*primeiro filho do newslatter form input terá as seguintes propriedades:*/
+    display: inline-block;
+    width: 100%;
+    outline: none; /*Não ter efeito de quand um input esta selecionado*/
+    padding:16px 140px 16px 15px;
+    border: 2px solid black;
+    border-radius: 30px;
+
+}
+.newslatter form input:last-child{
+    position:absolute;
+    display: inline-block;
+    outline: none;
+    padding:12px 30px;
+    border-radius: 30px;
+    border:none;
+    background:rgb(227, 118, 118) ;
+    color:white;
+    margin-top: 15px;
+    cursor:pointer;
+    box-shadow: 5px 10px #888888; /*Efeito sombreado*/
+}
+.newslatter form input:last-child:hover{ /*último filho do newslatter form input, ao passar o mouse, terá as seguintes propriedades:*/
+    transform: scale(1.1); /*Efeito de ir para frente a imagem*/
+}
+header.sticky{ /*classe que foi feita em javascript*/
+    padding: 25px 5%;
+    background:#fad75a;
+}
+
+.sticky .button-header{
+    background:white;
+    color:black;
+}
+#quemsomos{
+    background:lightgray;
+    display:grid;
+    grid-template-columns:repeat(2,2fr);/*repetir 2 colunas com 2 frações de tela*/
+    align-items: center;
+    grid-gap: 2rem; /*Vão entre as 2 colunas*/
+}
+.img-quemsomos img{
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.text-sobrenos{
+    box-shadow: 5px 10px #888888;
+}
+.text-sobrenos h2{
+    font-size: 40px;
+    color: black;
+    margin-bottom: 30px;
+}
+.text-sobrenos h5{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color:#9c9944;
+    font-weight: bold;
+}
+.text-sobrenos p{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 20px;
+    max-width: 590px;
+   
+}
+#servicos{
+    background:	#c9bd19;
+}
+.text-servicos-caopanheiros{
+    text-align: center;
+}
+.text-servicos-caopanheiros h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.text-servicos-caopanheiros p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color:#5a5d61;
+    font-weight: bold;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(370px,auto));
+	/*O autofit é uma especie de "responsividade". Enquanto tiver espaço, ele vai expandir os itens,no caso no mínimo de 370pixels ele vai quebrar a linha*/
+    align-items: center;
+	grid-gap:2rem;
+    margin-top: 4.5rem;
+}
+.containers-servicos{
+   background: #D3D3D3;
+   border-radius: 10px;
+   cursor:pointer;
+   transition: all .35s;
+   padding: 55px 30px;
+   box-shadow: 5px 10px black;
+  
+}
+.containers-servicos i{
+    color:white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.containers-servicos img{
+    max-width: 100%;
+    width: 430px;
+    height: 250px;
+    border-radius: 10px;
+    margin:15px auto;
+    
+}
+.containers-servicos h4{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 16px;
+    color:brown;
+}
+.containers-servicos p{
+    font-weight: bold;
+    line-height: 20px;
+}
+.containers-servicos:hover{
+    transform: translateY(-8px);
+}
+#caopanheiros{
+    background:white;
+}
+.caopanheiros-box{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(370px,auto)); 
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.5rem;
+    cursor:pointer;
+    text-align: center;
+}
+.img-caopanheiros img{
+    max-width: 100%;
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 23px;
+    margin-top: 10px;
+    border:4px solid black;
+    box-shadow: 5px 10px #888888;
+}
+.img-caopanheiros h5{
+    margin-top: 14px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.img-caopanheiros p{
+    font-size: 14px;
+	font-weight:bold;
+}
+.img-caopanheiros:hover{
+    transform: scale(1.1);
+}
+#contato{
+    background:#B45F04;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    align-items: center;
+    grid-gap: 3rem;
+}
+.img-contato img{
+    max-width: 100%; /*Largura máxima da imagem*/
+    width: 700px;
+    height: auto;
+}
+.formulario p{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 20px;/*Espaçamento entre as linhas dos parágrafos*/
+    margin-bottom: 30px;
+}
+.formulario form{
+    position:relative;
+}
+.formulario form input,select{
+    width: 100%;
+    padding:20px;
+    background: white;
+    outline:none;/*Tirar o preenchimento de quando o input ou select está selecionado*/
+    border-radius: 20px;
+    margin-bottom: 8px;
+	border:1px solid black;
+}
+.formulario h3{
+    margin-bottom: 8px;
+    margin-left:38px;
+}
+.formulario form .enviar{
+    background:black;
+    color:white;
+    font-weight: bold;
+    border-radius: 22px;
+    text-transform: uppercase;/*Texto todo maiúsculo*/
+}
+.formulario form .enviar:hover{
+    transform: translateY(-4px);
+    cursor: pointer;
+}
+#rodape{
+	background:black;
+	text-align:center;
+	height:75px;
+	color:white;
+	font-size:12px;
+	padding-top:15px;
+}
+.redesocial i:hover{
+	transform: scale(1.1);
+    color:red;
+
+}
+.redesocial i{
+	color:white;
+	padding-top:10px;
+	font-size:25px;
+}
+
+@media (max-width:1270px){ /*Começo do uso do media (responsividade*/
+	header{
+		padding:18px 4%;
+		transition:.2s; /*Transição de 2 segundos*/
+	}
+	header.sticky{
+		padding:10px 4%;
+		transition:.2s;
+	}
+	section{
+		padding:80px 4%;
+		transition:.2s;
+	}
+	.navbar a{
+		font-size:14px;
+	}
+	.button-header{
+		font-size:12px;
+	}
+	
+}
+@media (max-width:990px){
+	#home{
+		height:85vh;
+	}
+	#hamburguer-menu{
+		display:initial;/*é o contrário do none*/
+	}
+	.navbar{
+		position:absolute;
+		flex-direction:column;/*Direção coluna, inves de linha*/
+		top:-700px;
+		left:0;
+		right:0;
+		text-align:left;
+		transition:all.30s;
+        background:#fad75a;;
+	}
+	.navbar a{
+		display:block;
+		padding:1.1rem;
+		margin:1.3rem;
+		border-left:2px solid white;
+        font-weight: bold;
+        font-size: 18px;
+	}
+	.navbar a::after{
+		display:none;
+	}
+	.navbar a:hover{
+		background:red;
+	}
+	.navbar.active{
+		top:100%
+	}
+	#quemsomos{
+		grid-template-columns:1fr;
+	}
+	.img-quemsomos{
+		text-align:center;
+		margin-bottom:28px;
+		
+	}
+	.img-quemsomos img{
+		max-width:100%;
+		width:680px;
+		height:auto;
+	}
+    .containers-servicos img{
+        max-width: 100%;
+        margin:15px auto;
+        text-align: center;
+    }
+	#contato{
+		grid-template-columns:1fr;
+	}
+	.img-contato{
+		text-align:center;
+		margin-bottom:25px;
+	}
+	.formulario{
+		order:2; /*Inverte a ordem dos elementos, no caso vem primeiro a foto e depois o formulário*/
+	}
+	#caopanheiros p{
+		font-size:12px;
+	}
+	.containers-servicos p{
+		font-size:12px;
+	}
+    .img-caopanheiros{
+        max-width: 100%;
+        width: 400px;
+        height: auto;
+        
+    }
+    
+    	
+}
+
+	
+
+
+

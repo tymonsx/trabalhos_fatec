@@ -1,0 +1,265 @@
+<html>
+	<head>
+		<title>Astronomia</title>
+		<meta charset='utf-8'>
+		<link rel='stylesheet' type='text/css' href='estilo.css'>
+		<link rel="icon" type="image/x-icon" href="astronomia.png">
+
+		<script>
+		function apareceDesaparece(id){
+			var obj=document.getElementById(id);
+			if(obj.style.display!="block"){
+				obj.style.display="block";
+			}
+			else{
+				obj.style.display="none";
+			}
+		}
+		
+		function increver(id){
+			var objEmail=document.getElementById(id);
+			alert('Obrigado por se inscrever! ' + objEmail.value);
+		}
+
+		</script>
+
+        <style>
+            /*deixa o comportamento da barra de rolagem mais suave*/
+            html{
+                scroll-behavior: smooth;	
+            }
+            /*muda o fonte do documento inteiro e remove a margem padrão da tag body*/
+            body{
+                font-family:Trebuchet MS; 	
+                margin:0;
+            }
+            /*define todos os divs que tenham a palavra secao no id fiquem do tamanho da tela*/
+            div[id*='secao']{
+                height:100%;
+                width:100%;
+            }
+            /*define que todo h2 das secoes tenha um espaçamento no topo do tamanho do cabeçalho, caso contrário o 
+            título ficaria atras do cabeçalho*/
+            div[id*='secao'] h2{	
+                padding-top:110px;
+            }
+            /* define todas as tags p com alinhamento justificado e cria um padding na direita e  esquerda */
+            p{
+                text-align:justify;
+                padding:0px 10px;
+                
+            }
+            /*cabeçalho com position fixed para ser acessivel por todo o documento*/
+            #cabecalho{
+                background:#000000;
+                width:100%;
+                height:100px;
+                text-align:center;
+                position:fixed;
+                top:0px;
+                left:0px;
+                background-image: url('fundo.jpg');
+                background-size: 100% 100%;
+
+            }
+            
+            /* define o tamanho e cor da fonte do título do cabeçalho */
+            #cabecalho h1{
+                color:#ffffff;
+                font-size:30px;
+  
+            }
+
+            /* define o tamanho do botão hamburguer posicionado a esquerda e invisível */
+            #hamburguer{
+                width:8px;
+                float:left;
+                display:none;
+                background-color:hwb(0 100% 0%);
+            }
+            /* define o tamanho da imagem do hamburguer */
+            #hamburguer img{
+                width:30px;
+                height:20px;
+            }
+
+            
+            /* ajusta os li do menu para ficarem em linha e com um espaçamento entre si*/
+            #menu li{
+                list-style:flex;
+                display:inline;
+                padding:5px;
+            }
+            /* define o estilo dos links do menu */
+            #menu a:link{
+                color:#b8b3ff;
+                font-weight:bold;
+                text-decoration:none;
+                border:solid 1px #000000;
+            }
+            #menu a:visited{
+                color:#ff0000;
+                border:solid 1px #000000;
+            }
+            #menu a:hover{
+                color:#ffaa01;	
+                border:solid 1px #000000;
+            }
+            #menu a:active{
+                color:#FFE2A8;	
+            }
+
+            /* define o estilo da seção 1*/
+            #secao1{
+                background:#ffffff;
+            }
+            /* define o estilo do título da seção 1*/
+            #secao1 h2{
+                background:#000000;
+                text-align:center;
+                color: #ffffff;
+                background-image: url('fundo.jpg');
+                background-size: 100% 100%;
+            }
+            /* define o estilo da seção 2*/
+            #secao2{
+                background:#ffffff;
+                
+            }
+            /* define o estilo do título da seção 2*/
+            #secao2 h2{
+                background:#000000;
+                text-align:center;
+                color:#ffffff;
+                background-image: url('fundo.jpg');
+                background-size: 100% 100%;
+            }
+            /* define o estilo da seção 3*/
+            #secao3{
+                background:#ffffff;
+            }
+            /* define o estilo do título da seção 3*/
+            #secao3 h2{
+                background:#000000;
+                text-align:center;
+                color:#ffffff;
+                background-image: url('fundo.jpg');
+                background-size: 100% 100%;
+            }
+            /* define o estilo da seção 4*/
+            #secao4{
+                background:#ffffff;
+            }
+            /* define o estilo do título da seção 4*/
+            #secao4 h2{
+                background:#000000;
+                text-align:center;
+                color:#ffffff;
+                background-image: url('fundo.jpg');
+                background-size: 100% 100%;
+            }
+            #secao5{
+                background:#ffffff;
+            }
+            /* define o estilo do título da seção 4*/
+            #secao5 h2{
+                background:#000000;
+                text-align:center;
+                color:#ffffff;
+                background-image: url('fundo.jpg');
+                background-size: 100% 100%;
+            }
+            /* em telas de até 600px de largura o menu desaparece e aparece o botão hamburguer */
+            @media only screen and (max-width: 600px) {
+                #menu{
+                    display:none;
+                }
+                #hamburguer{
+                    display:block;
+                }
+            }
+
+        </style>
+
+	</head>
+	<body>
+		<div id='cabecalho'>
+            
+			<h1><MARQUEE>Astronomia</MARQUEE></h1>
+			<div id='hamburguer'>
+				<a href="javascript:apareceDesaparece('menu');"><img src='menu-icon.svg.jpeg'></a>
+			</div>
+			<div id='menu'>
+				<ul>
+					<li><a href='#secao1'>História</a></li>
+					<li><a href='#secao2'>Áreas</a></li>
+					<li><a href='#secao3'>Astros</a></li>
+                    <li><a href='#secao4'>Referências</a></li>
+                    <li><a href='#secao5'>Assine já!</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id='secao1'>
+			<a name='História'><h2><b>História da Astronomia </b></h2></a>
+			<p>		
+				Antes de adentrarmos na história, vamos ver o significado de <b>astronomia</b>: <ins>"A Astronomia é uma ciência natural que se ocupa basicamente em estudar os fenômenos que ocorrem fora da atmosfera terrestre e a estrutura dos corpos celestes, como os planetas, as estrelas e outras estruturas cosmológicas (cometas, galáxias e nebulosas, por exemplo), e o próprio espaço em si. A palavra Astronomia vem do grego Astron, que significa astro, e Nomos, que significa lei."</ins> <br>
+                Muitas civilizações antigas tratavam os astros como divindades. O estudo dos movimentos dos planetas e estrelas permitia aos povos antigos a distinção entre épocas de plantio e colheita, por exemplo. Algumas culturas antigas, como os maias, os chineses, os egípcios e os babilônios, foram capazes de elaborar complexos calendários baseados no movimento do Sol e outros astros. <br>
+                Os gregos antigos também contribuíram muito para o avanço da Astronomia. Muitos filósofos gregos elaboraram modelos com o intuito de explicar o formato da Terra, as estações do ano, bem como os movimentos do Sol, da Lua e dos outros planetas visíveis a olho nu. <br>
+                <br>
+
+			</p>
+            <div id='filósofos'>
+                <ul>
+                    <li><b><u>Tales de Mileto<sup>1</sup></u></b> considerava a Terra um disco plano preenchido por água.</li>
+                    <li><b><u>Pitágoras de Samos<sup>2</sup></u></b>, por sua vez, acreditava que a Terra apresentava formato esférico.</li>
+                    <li>Já <b><u>Aristóteles de Estagira<sup>3</sup></u></b> explicou que as fases da Lua dependiam da iluminação solar, ao observar a formação de sombras durante os eclipses, e também defendia a hipótese de que o Universo fosse finito e esférico e que, juntamente aos astros, fosse imutável: sempre existira e sempre existiria.</li>
+                </ul>
+            </div>
+		</div>
+
+		<div id='secao2'>
+			<a name='Áreas'><h2>Áreas da Astronomia</h2></a>
+			<p>		
+				A Astronomia é uma área do conhecimento bastante ampla e com várias subdivisões. Entre elas, podemos destacar:
+
+                <li><b>Astrobiologia:</b> evolução de sistemas biológicos no universo;</li><br><img src="astrobiologia.jpeg" style="float:middle; height:100;"><br>
+                <li><b>Astrofísica:</b> estudo das propriedades físicas dos corpos celestes, como sua densidade, temperatura, luminosidade, entre outros;</li><br><img src="astrofisica.jpeg" style="float:middle; height:100;"><br>
+
+                <li><b>Astronomia planetária:</b> estudo dos sistemas planetários, com ênfase no sistema solar, que reúne física nuclear, geologia, meteorologia etc.</li><br><img src="planetaria.jpeg" style="float:middle; height:100;"><br>
+            </p>
+		</div>
+		<div id='secao3'>
+			<a name='Astros'><h2>Maior e Menor Astro</h2></a>
+			<p>		
+				<br>
+                <span style="color:blue"> Qual o maior astro? </span><br>
+                <strong>VY Canis Majoris</strong>
+                É a estrela VY Canis Majoris, com cerca de 2,7 bilhões de km de diâmetro, ou seja, mais de 3 milhões de vezes maior do que o Sol.<br> <img src="vy.jpeg" style="float:middle; height:100;">
+                <br> <br>
+                <span style="color:blue"> Qual o menor astro? </span><br>
+                Cientistas encontraram a <strong>EBLM J0555–57Ab</strong>, a menor estrela já descoberta. Ela é um pouquinho maior que Saturno e está a aproximadamente 600 anos-luz da Terra. A “estrelinha” está situada em um sistema binário, no qual orbita uma muito maior. Para os especialistas, seu tamanho prova quão pequenos esses astros podem ser.<br> <img src="eblm.jpeg" style="float:middle; height:100;">
+
+			</p>
+		</div>
+        <div id='secao4'>
+            <a name='Referências'><h2>Referências bibliograficas</h2></a>
+            <p>
+                <li>História da Astronomia: https://mundoeducacao.uol.com.br/fisica/a-historia-astronomia.htm</li><br>
+                <li>Áreas da Astronomia: https://mundoeducacao.uol.com.br/fisica/a-historia-astronomia.htm</li><br>
+                <li>Maior Astro: https://super.abril.com.br/mundo-estranho/qual-o-maior-astro-do-universo/</li><br>
+                <li>Menor Astro: https://revistapesquisa.fapesp.br/a-menor-estrela-possivel/</li><br>
+            </p>
+        </div>
+        
+        <div id="secao5">
+            <a name="Assine já!"><h2>Faça parte hoje!</h2></a>
+                <fieldset><legend>Inscreva-se</legend>
+				<form action="javascript: increver('txtEmail');">
+					Assine hoje e venha conhecer melhor nosso projeto. Esperamos por você!<br>
+					E-mail:<input type='text' name='txtEmail' id='txtEmail' placeholder='meuemail@provedor.com'><br>
+					<input type='submit' value='Confirmar'>
+				</form>
+			</fieldset>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<html>
+	<head>
+		<title>Portfólio Naomy</title>
+		<meta charset='utf-8'>
+		<link rel='stylesheet' type='text/css' href='estilo.css'>
+		<!-- iconeeee -->
+		<link rel="icon" type="image/x-icon" href="img/icon.jpeg"> 
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+		<script>
+		function apareceDesaparece(id){
+			var obj=document.getElementById(id);
+			if(obj.style.display!="block"){
+				obj.style.display="block";
+			}
+			else{
+				obj.style.display="none";
+			}
+		}
+		
+		function increver(id){
+			var objEmail=document.getElementById(id);
+			alert('Obrigada por entrar em contato! ˆ-ˆ' + objEmail.value);
+		}
+
+		</script>
+	</head>
+	<body>
+		<div id='cabecalho'>
+			<div id='hamburguer'>
+				<a href="javascript:apareceDesaparece('menu');"><img src='img/menu-icon.png'></a>
+			</div>
+			<div id='menu'>
+				<ul>
+					<li><a href='#home'>Home</a></li>
+					<li>|&nbsp; <a href='#artes'>Artes</a></li>
+					<li>|&nbsp; <a href='#projetos'>Projetos</a></li>
+					<li>|&nbsp; <a href='#sobre'>Sobre</a></li>
+					<li>|&nbsp; <a href='#contato'>Contato</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="secao1">
+			<div id="secao1-img">
+				<img src="img/fundo.PNG" alt="">
+				<div id="secao1-texto"><a name='home'><h2>Olá,</h2></a>
+					<h3>meu nome é <span>Naomy</span>!</h3>
+					<p>Ilustradora e programadora.</p></div>
+			</div>
+		</div>
+		<div id='secao2'>
+			<a name='artes'><h2>Artes</h2></a>
+			<div class="galeria1">
+				<div class="item">
+					<img src="img/arte-1.jpeg" alt="">
+					<p>Spring</p>
+				</div>
+				<div class="item">
+					<img src="img/arte-2.jpeg" alt="">
+					<p>Love+death+robots fanart</p>
+				</div>
+				<div class="item">
+					<img src="img/arte-3.jpeg" alt="">
+					<p>Lake</p>
+				</div>
+			</div>
+			<div class="galeria1">
+				<div class="item">
+					<img src="img/arte-4.jpeg" alt="">
+					<p>Death</p>
+				</div>
+				<div class="item">
+					<img src="img/arte-5.jpeg" alt="">
+					<p>Witch Cabin</p>
+				</div>
+				<div class="item">
+					<img src="img/arte-6.jpeg" alt="">
+					<p>Mothman</p>
+				</div>
+			</div>
+		</div>
+		<div id='secao3'>
+			<a name='projetos'><h2>Projetos</h2></a>
+			<div class="galeria1">
+				<div class="item">
+					<img class="proj1" src="img/proj1.png" alt="">
+					<a href="https://github.com/naomy19/quiz_game_2021.2" target="_blank"><p>Jogo Quiz</p></a>
+				</div>
+				<div class="item">
+					<img class="proj2" src="img/proj2.png" alt="">
+					<a href="https://github.com/naomy19/Ordering_System_Project_1.2022" target="_blank"><p>Sistema de Gestão de Confeitaria</p></a>
+				</div>
+			</div>
+		</div>
+		<div id='secao4'>
+			<a name='sobre'><h2>Sobre</h2></a>
+			<div id="social">
+				<img src="img/imagem.png" alt="">
+				<a href="https://www.instagram.com/minaomy.art/" target="_blank"><img class="ig" src="img/ig.png" alt="Instagram"></a>
+				<a href="https://github.com/naomy19" target="_blank"><img class="github" src="img/github.png" alt="GitHub"></a>
+			</div>
+			<p>		
+				Sou ilustradora freelancer e estudante de análise e desenvolvimento de sistemas. <br>
+				Adoro trabalhar com ilustrações em preto e branco ou paletas com cores pastéis. <br>
+				Minhas artes possuem inpirações na natureza com toques obscuros. <br>
+				Também gosto de desenvolver layouts minimalistas para sites.
+			</p>
+		</div>
+		<div id='secao5'>
+			<a name='contato'><h2>Contato</h2></a>
+			<p>		
+				Quer trabalhar junto em um projeto ou encomendar uma ilustração?
+				<fieldset><legend> Entre em contato! </legend>
+				<form action="javascript: increver('txtEmail');">
+					<input type="text" name="nome" id="nome" placeholder="Nome"><br>
+					<label><input type="radio" name="rd" id="rd-proj"> Projeto</label>
+					<label><input type="radio" name="rd" id="rd-encom"> Encomenda</label> <br>
+					<input type='text' name='txtEmail' id='txtEmail' placeholder="E-mail"><br>
+					<input type="text" name="assunto" id="assunto" placeholder="Assunto"><br>
+					<textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escreva uma mensagem..."></textarea> <br>
+					<input type='submit' value='Enviar'>
+				</form>
+				</fieldset>
+			</p>
+		</div>
+	</body>
+</html>

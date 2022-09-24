@@ -1,0 +1,113 @@
+<!--Bruna Silvestre do Nascimento-->
+<html>
+	<head>
+		<title>Bolo Delicia</title>
+		<meta charset='utf-8'>
+		<link rel='stylesheet' type='text/css' href='estilo.css'>
+		<link rel="icon" type="image/x-icon" href="menu-icon.svg">
+		<script>
+		function apareceDesaparece(id){
+			var obj=document.getElementById(id);
+			if(obj.style.display!="block"){
+				obj.style.display="block";
+			}
+			else{
+				obj.style.display="none";
+			}
+		}
+		
+		function encomendar(id){
+			var objEncomendar=document.getElementById(id);
+			alert('Encomenda realizada com sucesso! ' + objEncomendar.value);                                                                                                        
+			document.querySelector("form").reset();
+		}
+		</script>
+	</head>
+	<body>
+		<div id='cabecalho'>
+			<h1>Bolo Delicia</h1>
+			<div id='hamburguer'>
+				<a href="javascript:apareceDesaparece('menu');"><img src='menu-icon.svg'></a>
+			</div>
+			<div id='menu'>
+				<ul>
+					<li><a href='#secao1'>Bolo Delicia</a></li>
+					<li><a href='#secao2'>Bolos</a></li>
+					<li><a href='#secao3'>Onde encontrar</a></li>
+					<li><a href='#secao4'>Encomendar</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id='secao1'>
+			<a name='secao1'><h2>Bolo Delicia</h2></a>
+			<div id='bolodelicia'>
+			<p>		
+				Bolo Delicia surgiu para nos relembrar como é gostoso comer um bolo saboroso.</br> 
+				</br> Seja um bolo simples e aromático para toma café da tarde, ou um bolo com
+				cobertura e recheio para comemorar uma circunstância especial.</br> 
+				</br> Bolo Delicia é indicado para todas as horas.</br>
+				</br> Desejamos que a leveza de nossos bolos inspire leveza no dia-a-dia de nossos clientes.</br>
+				</br><b> Experimente e nos conte como foi sua experiência.</b></br>
+			</p>
+			</div>
+		</div>
+		<div id='secao2'>
+			<a name='secao2'><h2>Bolos</h2></a>
+			<div>
+				<ul class="slider">
+					<li>
+						  <input type="radio" id="slide1" name="slide" checked>
+						  <label for="slide1"></label>
+						  <img src="https://img.freepik.com/fotos-premium/bolo-de-chocolate-com-morangos-em-cima-da-mesa_107760-823.jpg?w=740" />
+					</li>
+					<li>
+						  <input type="radio" id="slide2" name="slide">
+						  <label for="slide2"></label>
+						  <img src="https://img.freepik.com/fotos-gratis/vista-frontal-de-bolo-de-chocolate-doce-com-espaco-de-copia_23-2148834060.jpg?w=826&t=st=1663893516~exp=1663894116~hmac=294537d52dbeaa28103fafd1a857d18331f82a0597d41d1f23ca949c8146f21f" />
+					</li>
+					<li>
+						  <input type="radio" id="slide3" name="slide">
+						  <label for="slide3"></label>
+						  <img src="https://img.freepik.com/fotos-gratis/variedade-de-pedacos-de-bolo_114579-85732.jpg?w=740&t=st=1663893621~exp=1663894221~hmac=54dafc536fc0bf3dcf9ebdfcf9d3aa8d9ce8e90bf3e27d3daa4bca3a0d9e7cae" />
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id='secao3'>
+			<a name='secao3'><h2>Onde encontrar</h2></a>
+			<div><img id='imgsecao3' src="https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-abstrato-da-busca-interativa-da-cidade_335657-2492.jpg?w=740&t=st=1663783029~exp=1663783629~hmac=da2185b68650f50929ad0fa527e24ea264361c80846d84a16ade786541e0024d"></img></div>
+			<div id='right'>
+				<p>
+				 Localização:</br>
+				 Rua dos bolos, 123, Bairro Alegria, São-Paulo</br>
+				 Av. dos viajantes, 567, Bairro Perdidos, São-Paulo</br>
+				 Av. dos doces, 789, Bairro Confeiteiros, São-Paulo</br>
+				</p>
+			</div>
+		</div>
+		<div id='secao4'>
+			<a name='secao4'><h2>Encomendar</h2></a>
+			<p>	Faça sua encomenda na Bolo Delicia</br>
+				Orientação: Aceitamos encomendas com 3 dias de antecedência</br>
+			</p>
+				<fieldset><legend>Encomendar</legend>
+				<form action="javascript:encomendar('txtnome');">
+					Suas informações<br>
+					Nome:<input type='text' name='txtnome' required id='txtnome'  maxlength='30'><br>
+					Celular:<input type='tel' name='txttel' required id='txttel'  pattern='[0-9]{11}'>
+					<select name="Sabores" required>
+						<option value="">Escolha um sabor</option>
+						<option value="b1">Bolo de Banana</option>
+						<option value="b2">Bolo de Chocolate</option>
+						<option value="b3">Bolo de Morango com Ninho</option>
+						<option value="b4">Bolo Red Velvet</option>
+						<option value="b5">Bolo de nozes com doce de leite</option>
+						<option value="b6">Bolo com calda de laranja</option>
+					</select>
+					<input type='date' value='retirada' required pattern='datetime'>
+					<input type='submit' value='Encomendar'>
+				</form>
+				</fieldset>
+		</div>
+	</body>
+</html>

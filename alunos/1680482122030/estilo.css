@@ -1,0 +1,253 @@
+/* ESTILOS GERAIS */
+/* deixa o comportamento da barra de rolagem mais suave */
+html{
+	scroll-behavior: smooth;	
+}
+/* muda o fonte, cor do texto do documento inteiro, cor de fundo e remove a margem padrão da tag body */
+body{
+	font-family: 'Roboto Mono', monospace; 	
+	color: #33272A;
+	margin:0;
+	background: #FEF6E4;
+}
+/* define todos os divs que tenham a palavra secao no id fiquem do tamanho da tela */
+div[id*='secao']{
+	height:100%;
+	width:100%;
+}
+/* define que todo h2 das secaoes tenha um espaçamento no topo do tamanho do cabeçalho, caso contrário o título ficaria atras do cabeçalho */
+div[id*='secao'] h2{	
+	padding-top: 60px;
+	padding-left: 80px;
+	padding-bottom: 10px;
+	font-size: 40px;
+}
+/* define todas as tags p com alinhamento justificado e cria um padding na direita e  esquerda */
+p{
+	text-align:justify;
+	padding:0px 10px;
+}
+
+/* ESTILOS CABEÇALHO */
+/* cabeçalho com position fixed para ser acessivel por todo o documento */
+#cabecalho{
+	background:#f5e4bf;
+	width:100%;
+	height:50px;
+	text-align:center;
+	position:fixed;
+	top:0px;
+	left:0px;	
+	/* z-index para ficar sobre todo conteúdo da página */
+	z-index: 1;
+}
+/* define o tamanho e cor da fonte do título do cabeçalho */
+#cabecalho h1{
+	color:#FFE2A8;
+	font-size:28px;
+}
+
+/* ESTILOS HAMBUGUER */
+/* define o tamanho do botão hamburguer posicionado a esquerda e invisível */
+#hamburguer{
+	width:30px;
+	float:right;
+	margin: 20px 10px;
+	display:none;
+}
+/* define o tamanho da imagem do hamburguer */
+#hamburguer img{
+	width:30px;
+}
+
+/* ESTILOS MENU */
+/* ajusta os li do menu para ficarem em linha e com um espaçamento entre si*/
+#menu li{
+	list-style:none;
+	display:inline;
+	padding:5px;
+}
+/* define o estilo dos links do menu */
+#menu a:link{
+	font-weight:bold;
+	text-decoration:none;
+	color: #33272A;
+	padding: 2px 5px;
+}
+#menu a:visited{
+	color: #33272A;
+}
+#menu a:hover{
+	background: #33272A;
+	color: #FAEEE7;
+	padding: 2px 5px;
+}
+#menu a:active{
+	color: #33272A;
+	background: #f5e4bf;
+}
+
+/* ESTILOS SEÇÃO 1 - HOME */
+/* define o estilo da seção 1 - Home */
+#secao1{
+	width: 100%;
+	height: 100%;
+}
+#secao1 h2{
+	padding-top:400px;
+	margin-bottom: 0;
+}
+#secao1 h3{
+	padding-left: 80px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#secao1 p{
+	padding-left: 80px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+#secao1-img img {
+	/* estilos para deixar imagem ao fundo e à direita */
+  position: relative;
+	height: 100%;
+	float: right;
+}
+#secao1-texto {
+	/* estilo para deixar texto sobre a imagem */
+	position: absolute;
+}
+
+/* define o estilo do texto da seção 1 - Home */
+#secao1 h2{
+	font-size: 70px;
+}
+#secao1 h3{
+	font-size: 50px;
+}
+#secao1 p{
+	font-size: 30px;
+}
+#secao1 span {
+	color: #FF8BA7;
+}
+
+/* ESTILOS SEÇÃO 2 - ARTES */
+/* define o estilo da seção 2 - Artes */
+#secao2{
+	background:#FAEEE7;
+	height: fit-content;
+}
+/* define estilo das imagens na galeria */
+.galeria1 {
+	display: flex;
+}
+.item {
+	text-align: center;
+}
+.item img{
+	box-sizing: border-box;
+	width: 80%;
+}
+.item p {
+	text-align: center;
+}
+.item img:hover {
+	border: solid 2px #3e2e32;
+}
+
+/* ESTILOS SEÇÃO 3 - PROJETOS */
+/* define o estilo da seção 3 - Projetos */
+#secao3{
+	background:#FAEEE7;
+}
+
+/* ESTILOS SEÇÃO 4 - SOBRE */
+/* define o estilo da seção 4 - Sobre */
+#secao4{
+	background:#FEF6E4;
+}
+#secao4 p {
+	margin: 30px 80px;
+	font-size: 20px;
+}
+#social {
+	margin: 20px 95px;
+}
+#social>img {
+	width: 40%;
+}
+.ig, .github {
+	width: 50px;
+}
+
+/* ESTILOS SEÇÃO 5 - CONTATO */
+/* define o estilo da seção 5 - Contato */
+#secao5{
+	background:#FAEEE7;
+}
+#secao5 p {
+	margin: 0 80px;
+	font-size: 25px;
+}
+fieldset {
+	margin: 30px 80px;
+	font-size: 20px;
+	text-align: center;
+}
+input, textarea {
+	margin-top: 15px;
+	padding: 5px;
+}
+input[type="text"], textarea{
+	width: 500px;
+}
+/* estilos para texto do placeholder */
+::placeholder {
+	font-size: 18px;
+	font-family: 'Roboto Mono', monospace; 	
+	color: #81696f;
+}
+/* estilos botão submit */
+input[type="submit"]{
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px; 	
+	background: #33272A;
+	border: solid 1px #33272A;
+	color: #FEF6E4;
+	border: none;
+	padding: 15px 20px;
+}
+input[type="submit"]:active{
+	border: solid 1px #33272A;
+	color: #33272A;
+	background: #FEF6E4;
+}
+
+/* em telas de até 600px de largura o menu desaparece e aparece o botão hamburguer */
+@media only screen and (max-width: 600px) {
+	p {
+		text-align: left;
+	}
+	#cabecalho {
+		height: 70px;
+	}
+	#menu{
+		display:none;
+	}
+	#hamburguer{
+		display:block;
+	}
+	#secao1 img {
+		display: none;
+	}
+	.galeria1{
+		display: block;
+	}
+	#secao3, #secao4 {
+		height: fit-content;
+	}
+	input[type="text"], textarea{
+		width: 300px;
+	}
+}

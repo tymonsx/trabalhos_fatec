@@ -1,0 +1,233 @@
+/*deixa o comportamento da barra de rolagem mais suave*/
+html{
+	scroll-behavior: smooth;	
+}
+/*muda o fonte do documento inteiro e remove a margem padrão da tag body*/
+body{
+	font-family:Trebuchet MS; 	
+	margin:0;
+}
+/*define todos os divs que tenham a palavra area no id fiquem do tamanho da tela*/
+div[id*='area']{
+	height:100%;
+	width:100%;
+}
+/*define que todo h2 das areaes tenha um espaçamento no topo do tamanho do cabeçalho, caso contrário o título ficaria atras do cabeçalho*/
+div[id*='area'] h2{	
+	padding-top:100px;
+}
+/* define todas as tags p com alinhamento justificado e cria um padding na direita e  esquerda */
+p{
+	text-align:left;
+	padding:0px 10px;
+}
+/*cabeçalho com position fixed para ser acessivel por todo o documento*/
+#cabecalho{
+	background-color: red;
+	width:100%;
+	height:100px;
+	position:fixed;
+	top:0px;
+	left:0px;	
+}
+/* define o tamanho e cor da fonte do título do cabeçalho */
+#logo{
+	width: 80px;
+}
+
+#menu{
+	text-align:center;
+}
+
+/* define o tamanho do botão hamburguer posicionado a esquerda e invisível */
+#hamburguer{
+	width:30px;
+	float:left;
+	display:none;
+}
+/* define o tamanho da imagem do hamburguer */
+#hamburguer img{
+	width:20px;
+}
+/* ajusta os li do menu para ficarem em linha e com um espaçamento entre si*/
+
+#menu li{
+	list-style:none;
+	display:inline;
+	padding:5px;
+}
+/* define o estilo dos links do menu */
+#menu a:link{
+	color:white;
+	font-weight:bold;
+	text-decoration:none;
+	border:solid 3px white;
+	background:rgb(175, 17, 17);
+}
+#menu a:visited{
+	color:black;
+	border:solid 3px black;
+}
+#menu a:hover{
+	color: black;	
+	background:white;
+	border:solid 3px black;
+}
+#menu a:active{
+	color:darkred;
+}
+
+/* define o estilo da seção 1*/
+#area1{
+	background-color: rgb(255, 255, 255);
+}
+/* define o estilo do título da seção 1*/
+#area1 h2{
+	background-color: white;
+	text-align: center;
+}
+
+#nossos{
+	text-align: center;
+}
+#quemSomos{
+	width: 50%;
+	margin: 0%;
+}
+#Breno{
+	width: 170px;
+}
+#yamaha{
+	width: 150px;
+}
+#triumph{
+	width: 150px;
+}
+#suzuki{
+	width: 150px;
+}
+#honda{
+	width: 130px;
+}
+#kawasaki{
+	width: 180px;
+}
+#ktm{
+	width: 130px;
+}
+#bmw{
+	width: 90px;
+}
+#logoHarley{
+	width: 200px;
+}
+#paragrafo{
+	margin: 0;
+	padding: 0;
+}
+/* define o estilo da seção 2*/
+#area2{
+	background-color: red;
+}
+/* define o estilo do título da seção 2*/
+#area2 h2{
+	background-color: red;
+	text-align: center;
+	margin: 0;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+.foto-motos{
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
+}
+.acec{
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
+}
+.topo{
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
+}
+#rap{
+	width: 250px;
+}
+#factor{
+	width: 200px;
+}
+#tiger{
+	width: 250px;
+}
+#xre{
+	width: 250px;
+
+}
+#harley{
+	width: 250px;
+
+}
+#fazer{
+	width: 250px;
+	margin: 0;
+}
+#xj{
+	width: 250px;
+
+}
+/* define o estilo da seção 3*/
+#area3{
+	background-color: white;
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+/* define o estilo do título da seção 3*/
+#area3 h2{
+	background-color: white;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+#capacete{
+	width: 200px;
+}
+#luvas{
+	width: 200px;
+}
+#suporte{
+	width: 200px;
+	margin: 0;
+}
+#capacete1{
+	margin-right: 100px;
+}
+#luvas1{
+	margin-left: 100px;
+}
+#suporte1{
+	margin-left: 100px;
+}
+/* define o estilo da seção 4*/
+#area4{
+	background-color: red;
+}
+/* define o estilo do título da seção 4*/
+#area4 h2{
+	background-color: red;
+	text-align: center;
+}
+#cont{
+	margin: 0;
+	padding: 0;
+}
+/* em telas de até 600px de largura o menu desaparece e aparece o botão hamburguer */
+@media only screen and (max-width: 600px) {
+	#menu{
+		display:none;
+	}
+	#hamburguer{
+		display:block;
+	}
+}

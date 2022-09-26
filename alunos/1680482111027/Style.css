@@ -1,0 +1,129 @@
+/*deixa o comportamento da barra de rolagem mais suave*/
+html{
+	scroll-behavior: smooth;	
+}
+/*muda o fonte do documento inteiro e remove a margem padrão da tag body*/
+body{
+	font-family:Trebuchet MS; 
+	margin:0;
+    background-size: cover;
+    background-position: center center;
+
+}
+/*define todos os divs que tenham a palavra secao no id fiquem do tamanho da tela*/
+div[id*='secao']{
+	height:100%;
+	width:100%;
+
+}
+/*define que todo h2 das secaoes tenha um espaçamento no topo do tamanho do cabeçalho, caso contrário o título ficaria atras do cabeçalho*/
+div[id*='secao'] h2{	
+	padding-top:50px;
+}
+div[id*='secao'] h3{	
+	padding-top:100px;
+}
+/* define todas as tags p com alinhamento justificado e cria um padding na direita e  esquerda */
+p{
+	text-align:center;
+	padding:0px 10px;
+}
+/*cabeçalho com position fixed para ser acessivel por todo o documento*/
+#cabecalho{
+	background:#000000;
+	width:100%;
+	height:100px;
+	text-align:center;
+	position:fixed;
+	top:0px;
+	left:0px;	
+}
+/* define o tamanho e cor da fonte do título do cabeçalho */
+#cabecalho h1{
+	color:#ffffff;
+	font-size:28px;
+}
+/* ajusta os li do menu para ficarem em linha e com um espaçamento entre si*/
+#menu li{
+	list-style:none;
+	display:inline;
+	padding:5px;
+}
+/* define o estilo dos links do menu */
+#menu a:link{
+	color:#ffffff;
+	font-weight:bold;
+	text-decoration:none;
+
+	background:#000000;
+}
+#menu a:visited{
+	color:#FFE2A8;
+	border:solid 3px #5D719E;
+}
+#menu a:hover{
+	color:#FFE2A8;	
+	background:#A1AECB;
+	border:solid 3px #A1AECB;
+}
+#menu a:active{
+	color:#FFE2A8;	
+}
+
+/* define o estilo da seção 1*/
+#secao1{
+    text-align:center;
+	
+}
+/* define o estilo do título da seção 1*/
+#secao1 h2{
+	text-align:center;
+}
+/* define o estilo da seção 2*/
+#secao2{
+	position: center;
+}
+/* define o estilo do título da seção 2*/
+#secao2 h2{
+	text-align:center;
+}
+/* define o estilo da seção 3*/
+#secao3{
+	
+}
+/* define o estilo do título da seção 3*/
+#secao3 h2{
+	text-align:center;
+}
+/* define o estilo da seção 4*/
+#secao4{
+	
+}
+/* define o estilo do título da seção 4*/
+#secao4 h2{
+
+	text-align:center;
+}
+/* define o estilo do título da seção 3*/
+#secao1 h3{
+	text-align:center;
+}
+
+/* define as "configurações da logo da esquerda 3*/
+#cabecalho img{
+	width:200px;
+	position: fixed;
+	float: left;
+	left: 0;
+	position: absolute;
+	bottom: 0%;
+}
+/* define as "configurações da logo da direita 3*/
+#cabecalho2 img{
+	width:200px;
+	position: fixed;
+	float: left;
+	left: 90%;
+	position: absolute;
+	bottom: 0%;
+}

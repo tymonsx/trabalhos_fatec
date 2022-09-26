@@ -1,0 +1,154 @@
+/*deixa o comportamento da barra de rolagem mais suave*/
+html{
+	scroll-behavior:auto;
+}
+/*muda o fonte do documento inteiro e remove a margem padrão da tag body*/
+body{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;	
+	margin:0;
+}
+/*define todos os divs que tenham a palavra secao no id fiquem do tamanho da tela*/
+div[id*='secao']{
+	height:100%;
+	width:100%;
+}
+/*define que todo h1 das secaoes tenha um espaçamento no topo do tamanho do cabeçalho, caso contrário o título ficaria atras do cabeçalho*/
+div[id*='secao'] h1{	
+	padding:100px;
+}
+/* define todas as tags p com alinhamento justificado e cria um padding na direita e  esquerda */
+p{
+	text-align:justify;
+	padding:0px 10px;
+}
+/*cabeçalho com position fixed para ser acessivel por todo o documento*/
+#cabecalho{
+	background:#BE6698;
+	width:100%;
+	height:100px;
+	text-align:center;
+	position:fixed;
+	top:0px;
+	left:0px;	
+}
+/* define o tamanho e cor da fonte do título do cabeçalho */
+#cabecalho h1{
+	color:#FFE2A8;
+	font-size:28px;
+}
+#cabecalho img{
+	width:200px;
+	position: fixed;
+	float: left;
+	left: 0;
+	position: absolute;
+	bottom: -70%;
+	
+}
+
+/* define o tamanho do botão hamburguer posicionado a esquerda e invisível */
+#hamburguer{
+	width:30px;
+	float:left;
+	display:none;
+}
+/* define o tamanho da imagem do hamburguer */
+#hamburguer img{
+	width:20px;
+}
+/* ajusta os li do menu para ficarem em linha e com um espaçamento entre si*/
+
+#menu li{
+	list-style:none;
+	display:inline;
+	padding:5px;
+
+}
+/* define o estilo dos links do menu */
+#menu a:link{
+	color:#FFE2A8;
+	font-weight:bold;
+	text-decoration:none;
+}
+#menu a:visited{
+	color:#FFE2A8;
+}
+#menu a:hover{
+	color:#FFFFFF;	
+
+}
+#menu a:active{
+	color:#FFE2A8;	
+}
+/* carrosel na parte inicial */
+.secao0 {
+	display:none;
+}
+.galery {
+	width: 500%;
+	height: 800%;
+	overflow:hidden;
+}
+.galery .fotos {
+	width: 500%;
+	animation-name: animacao;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+}
+.galery .fotos img {
+	width: 19.95%;
+}
+@keyframes animacao {
+	0% {margin-left: 0; }
+	20% {margin-left: 0; }
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	75% {margin-left: -300%;}
+	95% {margin-left: -300%;}
+	100% {margin-left: -100%;}
+}
+#secao1{
+	background:#FFFFFF;
+}
+/* define o estilo do título da seção 1*/
+#secao1 h1{
+	text-align: center;
+	font-size: 32px;
+	color: #BE6698	
+}
+#img {
+	text-align: center;
+}
+/* define o estilo da seção 2*/
+#secao2{
+	background:#FFFFFF;
+}
+/* define o estilo do título da seção 2*/
+#secao2 h1{
+	text-align: center;
+	font-size: 32px;
+	color: #BE6698;
+}
+/* define o estilo da seção 3*/
+#secao3{
+	background:#FFFFFF;
+}
+/* define o estilo do título da seção 4*/
+#secao3 h1{
+	text-align: center;
+	font-size: 32px;
+	color: #BE6698;
+	display: block;
+}
+
+/* em telas de até 600px de largura o menu desaparece e aparece o botão hamburguer */
+@media only screen and (max-width: 600px) {
+	#menu{
+		display:flex;
+	}
+	#hamburguer{
+		display:block;
+	}
+}

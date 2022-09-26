@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<title>Molecão PetShop</title>
+		<meta charset='utf-8'>
+		<link rel='stylesheet' type='text/css' href='estilo.css'>
+		<link rel="icon" type="image/x-icon" href="logoanao.png">
+		<script>
+		function apareceDesaparece(id){
+			var obj=document.getElementById(id);
+			if(obj.style.display!="block"){
+				obj.style.display="block";
+			}
+			else{
+				obj.style.display="none";
+			}
+		}
+		
+		function increver(id){
+			var objEmail=document.getElementById(id);
+			alert('Obrigado por se inscrever! ' + objEmail.value);
+		}
+
+		</script>
+	</head>
+	<body>
+		<div id='cabecalho'>
+			<h1>MoleCão PetShop</h1>
+			<div ><a href='#secao0'><img id="logo" src="logoo.png"> </a></div>
+			<div id='hamburguer'>
+				<a href="javascript:apareceDesaparece('menu');"><img src='menu-icon.svg'></a>
+			</div>
+			<div id='menu'>
+				<ul>
+					<li><a href='#secao0'>Início</a></li>
+					<li><a href='#secao1'>História</a></li>
+					<li><a href='#secao2'>Missão, Valores e Visão</a></li>
+					<li><a href='#secao3'>Onde estamos</a></li>
+
+				</ul>
+			</div>
+		</div>
+			<div id="secao0" section class="galery">
+					<div class="fotos">
+						<img src="adotedoguinho.png" alt="fotinhamane">
+						<img src="atendimento.png" alt="fotinhamane">
+						<img src="gatinho.png" alt="fotinhamane">
+						<img src="adotedoguinho.png" alt="fotinhamane">
+					</div>
+				</section>
+		</div>
+		<div id='secao1'> <a name="secao1"> <h1>Nossa História </h1> </a> 
+			<font size="4">		
+				<p>	Inaugurada em 23 de setembro, a rede Molecão mantem em sua essência o DNA empreendedor e visionário, expandindo sua atuação e fortalecendo cada vez mais a conexão com apaixonados por pets. Sempre antenada e pioneira em suas iniciativas desde a fundação, em 2003 torna-se a primeira pet shop do mundo com atendimento 24 horas. </p>
+
+				<p>	A primeira loja da rede, localizada na Marginal Tietê (SP), ganha um novo centro de estética, mantendo o atendimento dos profissionais e condução dos serviços de banho e tosa visíveis aos consumidores através da instalação de vidros. Em 18 anos de atuação, a transparência, o respeito e o cuidado com o pet e sua família permanecem como parte relevante da cultura e valores disseminados dentro da equipe MoleCão, independentemente de onde atuam (lojas, centro de distribuição, escritório central). 			</p>
+
+				<p>	É lançado o Vale a pena ser fiel, um programa de fidelidade pioneiro no varejo pet com o mecanismo de cash back aos clientes cadastrados, para utilização nas próximas compras. No mesmo ano, de olho em ampliar sua presença no mundo digital, a MoleCão lança sua primeira plataforma de vendas online.			</p>
+
+				<p>	A MoleCão inaugura sua primeira loja fora do estado de São Paulo, em Brasília (DF). A agilidade na tomada de decisões, combinada com a capacidade de antever oportunidades para posicionar a marca em praças novas, fazem parte do DNA empreendedor da empresa até os dias de hoje. 			</p>
+
+				<div id="img"> 
+					<img src="petshopinho.jpg" alt="petshop"
+				</font>
+				</id> 
+				</div>
+		<div id='secao2'>
+			<a name='secao2'> <h1>  Missão, Valores e Visão</h1> </a>
+			<font size="4">
+			<p>		
+				Nossa Missão:
+				<p> Criar valor na interação com os apaixonados por animais de estimação, potencializando o bem da relação entre o pet e sua família. </p>
+			</p>
+			<p>
+				Nossa Visão:
+			<p>Ser mundialmente reconhecido como o melhor ecossistema do segmento Pet até 2025. Reconhecemos que ser MoleCão é experimentar e se esforçar para inovar constantemente. Ser Molecão é trabalhar colaborativamente para construir nossa visão comum. Ser Molecão é ser eficiente, ágil e simplificar. Ser Molecão é valorizar a diversidade e a construção de um ambiente cada vez mais inclusivo. </p>
+			</p>	
+			<p>
+				<ul> <p> Nossos Valores: </p>
+
+					<li>Somos apaixonados por pets; </li>
+					<li>Respeitamos uns aos outros; </li>
+					<li>Reconhecemos esforços, premiamos resultados; </li>
+					<li>Encantamos nossos clientes; </li>
+					<li>Temos prazer em servir. </li>
+				<p> <li> *Praticamos os 5 valores todos os dias. </li></p>
+				</ul>	
+			</font>
+			</div>
+
+			<div id='secao3'>
+				<a name='secao3'><h1>  Nossa Localização </h1> </a>
+				<font size="4"> 
+					<p>		
+						Estamos localizados na Av. Professor Luiz Ignácio Anhaia Mello, 5657. Venha nos conhecer e desfrutar do melhor atendimento para você e o melhor cuidado para seu pet!			</p>
+					</font>
+					<div id="mapa"> 
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.3705149246425!2d-46.54468558523985!3d-23.59104136857361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5da707cc90af%3A0xef6e2bcc43c0331!2sPetz!5e0!3m2!1spt-BR!2sbr!4v1663985486215!5m2!1spt-BR!2sbr" width="1000" height="450" style="border:3;" allowfullscreen="" loading="lazy" ></iframe>
+					</div>				
+					<div id="Formulario">	
+					<br><fieldset><legend>Deseja receber promoções, novidades e descontos? Faca parte do nosso grupo!</legend>
+						<form action="javascript: increver('txtEmail');">
+							Inscreva-se agora na nossa newsletter e receba as melhores ofertas, novidades e muito mais em primeira mão!<br> <br>
+							Seu Nome: <input type="text" name="nome" id="nome" placeholder="Digite o seu nome"> <br> <br>
+							Nome do Pet: <input type="text" name="nomepet" id="nome" placeholder="Digite o nome do seu pet"> <br> <br>
+							E-mail: <input type="email" name="email" id="nome" placeholder="exemplo@gmail.com"> <br><br>
+							Telefone: <input type="tel" name="telefone" id="nome" placeholder="(__) _____-____."> 
+							<br><br><input type='submit' value='Quero me inscrever!'>
+					</form>
+				</fieldset>
+			</div>
+		</div>
+	</body>
+</html>

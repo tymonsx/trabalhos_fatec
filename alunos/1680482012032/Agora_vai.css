@@ -1,0 +1,125 @@
+
+
+html {
+        
+    scroll-behavior: smooth;
+}
+
+img{
+    
+    border-radius: 45%;
+}
+
+#estrelas{
+    text-align: center;
+    font-family:Impact;
+    text-decoration:underline
+}
+
+#capsula{
+    float:inline-block;
+    border-top: rgba(1, 22, 39, 0.801);
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    color: #fff;
+    
+}
+#Foguete{
+    
+    border-radius: 20%;
+}
+
+#Apollo{
+    border-radius: 35%;
+}
+
+
+#menu {
+    height: 10%;
+    list-style: none;
+    background-color: black;
+    padding: 20px 40px 40px 10px;
+    
+}
+
+#menu li{
+    display: inline;
+    padding: 150px;
+}
+
+#menu li a {
+    color:white;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+#menu li a:hover{
+    color:blue;
+}
+
+#sec1 {
+    
+    height: 600px;
+
+    background-color: blue;
+    
+  }
+
+  #titulo {
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+#sec2 {
+    height: 600px;
+    background-color: grey;
+  }
+
+  #titulo2 {
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    color:#fff;
+}
+
+  #sec3{
+    height: 600px;
+    background-color: rgba(1, 22, 39, 0.801);
+  }
+
+  #titulo3 {
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    color:#fff;
+}
+  #sec4 {
+    height: 600px;
+    background-color:darkslategray
+  }
+
+  #titulo4 {
+    text-align: center;
+    font-size: 45px;
+    text-transform: uppercase;
+    color:#fff;
+}
+    
+
+#Legado{
+    border-top: rgba(1, 22, 39, 0.801);
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    color: #fff;
+}
+
+#Final{
+    color: #fff;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    text-align: center;
+
+}

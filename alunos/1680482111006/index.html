@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href='estilo.css'>
+    <script language='javascript' src='funcao.js'></script>
+    <title>Toyo Motos</title>
+</head>
+	<body>
+		<div id='cabecalho'>
+			<img id="logo" src="/WebSite - Breno/Logo.png" alt="Logo">
+			<div id='hamburguer'>
+				<a href="javascript:apareceDesaparece('menu');"><img src='menu-icon.svg'></a>
+			</div>
+			<div id='menu'>
+				<ul>
+					<li><a href='#area1'>Sobre Nós</a></li>
+					<li><a href='#area2'>Motos</a></li>
+					<li><a href='#area3'>Acessórios</a></li>
+					<li><a href='#area4'>Contato</a></li>
+				</ul>
+			</div>
+		</div>
+		<main>           
+            <div id='area1'>
+                <a name='area1'><h2>Sobre Nós</h2></a>
+                    <div class="topo">
+                    <p id="paragrafo">
+                        <div id='quemSomos'>
+                            <h4>Quem somos?</h4>
+                            <p>
+                                Fundada pelo nosso CEO Breno Kazuo, em pleno 2022, ano da copa do mundo e ano de eleição. Somos uma das maiores lojas revendedoras de motos e acessórios, estamos sempre aprendendo e evoluindo, sepre buscando melhora em nossa empresa. Tudo começou com apenas uma loja pequena que supria as necessidades de nosso CEO, hoje visamos expandir e estar em todos os continentes!
+                                <h4>Objetivo</h4>	
+                                Nosso objetivo é oferecer a melhor experiência ao se adquirir uma moto ou acessórios para a mesma
+                            </p>
+                        </div>
+                        <div>
+                            <figure><img id="Breno" src="/WebSite - Breno/Breno"><figcaption></figcaption><b>CEO da empresa: <br>Breno Kazuo</b></figure>
+                        </div>
+                </div>    
+            </div>
+                <div id="parceiros">
+                    <h4 id="nossos">Nossos parceiros de negócio</h4>
+                    <img id="yamaha" src="/WebSite - Breno/Yamaha.jpg">
+                    <img id="honda" src="/WebSite - Breno/Honda.jpg">
+                    <img id="logoHarley" src="/WebSite - Breno/logo harley.jpg">
+                    <img id="bmw" src="/WebSite - Breno/bmw.png">
+                    <img id="kawasaki" src="/WebSite - Breno/Kawasaki.png">
+                    <img id="ktm" src="/WebSite - Breno/ktm.jpg">
+                    <img id="suzuki" src="/WebSite - Breno/suzuki.png">
+                    <img id="triumph" src="/WebSite - Breno/triumph.png">
+                </div> 
+			</p>
+		</div>
+		<div id='area2'>
+			<a name='area2'><h2>Nossas motos</h2></a>
+            <div class="foto-motos">
+                <figure id="moto"><img id="tiger" src="/WebSite - Breno/Tiger.jpg"><figcaption>Triumph Tiger 1200 R$118.990</figcaption></figure>
+                <figure><img id="xj" src="/WebSite - Breno/XJ6.jpg"> <figcaption>Xj6 R$33.990,00</figcaption></figure>   
+                <figure><img id="xre" src="/WebSite - Breno/Xre.jpg"><figcaption>Xre 300 R$17.990,00</figcaption></figure> 
+                <figure><img id="harley" src="/WebSite - Breno/Harley.jpg"><figcaption>Harley R$156.700,00</figcaption></figure>
+                <figure id="fig"><img id="fazer" src="/WebSite - Breno/Fazer.jpg"><figcaption>Fazer R$21.900,00</figcaption></figure>
+                <figure id="fig"><img id="rap" src="/WebSite - Breno/rap.jpg"><figcaption>Rapsol R$159.000,00</figcaption></figure>
+                <figure id="fig"><img id="factor" src="/WebSite - Breno/factor.jpg"><figcaption>Factor R$14.600,00</figcaption></figure>
+            </div>  
+		</div>
+		<div id='area3'>
+			<a name='area3'><h2>Acessórios</h2></a>
+            <div class="acec">
+                <p>		
+                    <figure id="capacete1"><img id="capacete" src="/WebSite - Breno/Capacete.jpg"><figcaption>Capacete protetor</figcaption></figure>  
+                    <figure id="luvas1"><img id="luvas" src="/WebSite - Breno/Luvas.jpg"><figcaption>Luvas</figcaption></figure>  
+                    <figure id="suporte1"><img id="suporte" src="/WebSite - Breno/Suporte.jpg"><figcaption>Suporte de celular</figcaption></figure>  
+                </p>
+            </div>
+
+		</div>
+		<div id='area4'>
+			<a name='area4'><h2 id="cont">Contate-nos</h2></a>
+			<p>
+                Estamos loalizados na Av.Alguma coisa da Silva, nº216<br>
+                São Caetano do Sul, SP<br>
+                Número para contato: 1190000-0000		
+				<fieldset><legend>Inscreva-se</legend>
+				<form action="javascript: increver('txtEmail');">
+					Inscreva-se agora na nossa newsletter e receba informações sobre nossas novidades em primeira mão.<br>
+					E-mail:<input type='text' name='txtEmail' id='txtEmail' placeholder='meuemail@provedor.com'><br>
+					<input type='submit' value='Inscrever-se'>
+				</form>
+				</fieldset>
+			</p>
+		</div>
+    </main>
+	</body>
+</html>

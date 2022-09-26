@@ -1,0 +1,163 @@
+html {
+	scroll-behavior: smooth;
+}
+
+
+body {
+	font-family: Trebuchet MS;
+	margin: 0;
+}
+
+
+div[id*='secao'] {
+	height: 100%;
+	width: 100%;
+}
+
+
+div[id*='secao'] h2 {
+	padding-top: 100px;
+}
+
+
+p {
+	text-align: justify;
+	padding: 0px 10px;
+}
+
+
+#cabecalho {
+	background: black;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+
+#cabecalho h1 {
+	color: gold;
+	font-size: 28px;
+}
+
+
+#mercearia {
+	width: 30px;
+	float: left;
+	display: none;
+}
+
+
+#mercearia img {
+	width: 20px;
+}
+
+
+
+#menu li {
+	list-style: none;
+	display: inline;
+	padding: 5px;
+	text-align: center;
+}
+
+
+#menu a:link {
+	color: #FFE2A8;
+	font-weight: bold;
+	text-decoration: none;
+	border: solid 3px #5D719E;
+	background: #5D719E;
+}
+
+#menu a:visited {
+	color: #FFE2A8;
+	border: solid 3px #5D719E;
+}
+
+#menu a:hover {
+	color: #FFE2A8;
+	background: #A1AECB;
+	border: solid 3px #A1AECB;
+}
+
+#menu a:active {
+	color: #FFE2A8;
+}
+
+
+#secao1 {
+	background: aqua;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+#secao01 h2 {
+	background: gold;
+	text-align: center;
+}
+
+
+#secao2 {
+	background: greenyellow;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+#secao02 h2 {
+	background: gold;
+	text-align: center;
+}
+
+
+#secao3 {
+	background: pink;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+#secao03 h2 {
+	background: gold;
+	text-align: center;
+}
+
+
+#secao4 {
+	background: lightgray;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+#secao04 h2 {
+	background: gold;
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+	#menu {
+		display: none;
+	}
+
+	#mercearia {
+		display: block;
+	}
+}

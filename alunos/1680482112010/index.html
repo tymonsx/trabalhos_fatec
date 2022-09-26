@@ -1,0 +1,204 @@
+<html>
+	<head>
+		<title>Reposicao</title>
+		<meta charset='utf-8'>
+		<link rel='stylesheet' type='text/css' href='reposicao.css'>
+		<link rel="icon" type="image/x-icon" href="menu-icon.svg">
+		<script>
+		function apareceDesaparece(id){
+			var obj=document.getElementById(id);
+			if(obj.style.display!="flex"){
+				obj.style.display="flex";
+			}
+			else{
+				obj.style.display="none";
+			}
+		}
+		
+		function pedido(caixapedido,txtnome,txtendereco,txttel){
+		
+		var pedido=document.getElementById(caixapedido);
+		var nome=document.getElementById(txtnome);
+		var endereco=document.getElementById(txtendereco);
+		var tel=document.getElementById(txttel);
+			if(pedido.value == null || nome.value == null || endereco.value == null || tel.value == null){
+				alert("Preencha todos os campos!!");
+			}else{
+				alert('Obrigado:' + nome.value  +
+				"\nPedido: " + pedido.value);
+			}
+		}
+
+		</script>
+	</head>
+	<body>
+		<div id='cabecalho'>
+			<div id='iconemenu'>
+				<a href="javascript:apareceDesaparece('menu')"><img src='iconemenu.png'></a>
+			</div>
+			<div id='menu'>
+				<ul>
+					<li><img src = 'pedaco-de-bolo.png' width="20" height="20"><a href='#secao1'>Bolos</a></li>
+					<li><img src = 'cupcake.png' width="20" height="20"><a href='#secao2'>Cupcakes</a></li>
+					<li><img src = 'algodao-doce.png' width="20" height="20"><a href='#secao3'>Doces</a></li>
+					<li><img src = 'contato.png' width="20" height="20"><a href='#secao4'>Encomenda</a></li>
+				</ul>
+			</div>
+			<h1>Casa de bolos Pava</h1>
+		</div>
+		<div id='secao'>
+			<a name='secao1'><h2>Bolos</h2></a>
+			<div class = 'bolos'><h3>Bolos de Festa</h3>
+			<div class="b">
+			<div class="imagem"><img src="bolo1.jpg" width="150" height="100""></div>
+			<div class="textobolo"><li>Bolo de morango com chocolate e cobertura de chocolate branco.</li>
+			<li>Preço: R$ 35,00.</li>
+			<li>Ingredientes: morango, chocolate, chocolate branco, brigadeiro e grãos de chocolate.</li>
+			</div>
+			</div>
+			<div class="b">
+			<div class="imagem"><img src="bolo2.jpg" width="150" height="100"></div>
+			<div class="textobolo"><li>Bolo sabor chiclete com cobertura de chocolate.</li>
+			<li>Preço: R$ 45,00.</li>
+			<li>Ingredientes: sabor superficial de chiclete, chocolate e granulado colorido.</li>
+			</div>
+			</div>
+			<div class="b">
+			<div class="imagem" ><img src="bolo3.jpg" width="150" height="100"></div>
+			<div class= "textobolo"><li>Bolo de cereja com chocolate.</li>
+			<li>Preço: R$ 35,00.</li>
+			<li>Ingredientes: cereja, chocolate, gotas de chocolate e M&M's </li>
+			</div>
+			</div>
+
+				<h3>Bolos casuais</h3>
+			
+			<div class="b">	
+			<div class="imagem"><img src="boloS1.jpg" width="150" height="100""></div>
+			<div class="textobolo"><li>Bolo de limão.</li>
+			<li>Preço: R$ 15,00.</li>
+			</div>
+			</div>
+
+			
+			<div class="b">
+			<div class="imagem"><img src="boloS2.jpg" width="150" height="100"></div>	
+			<div class= "textobolo"><li>Bolo cenoura com chocolate.</li>
+			<li>Preço: R$ 15,00.</li>
+			</div>
+			</div>
+
+			<div class="b">
+			<div class="imagem"><img src="boloS3.jpg" width="150" height="100"></div>	
+			<div class="textobolo"><li>Bolo brigadeiro.</li>
+			<li>Preço: R$ 15,00.</li>
+			</div>	
+			</div>	
+			</div><!--bolos-->
+
+		<div id='secao'>
+			<a name='secao2'><h2>Cupcakes</h2></a>
+			
+			<div class="b">
+			<div class="imagem"><img src="cup1.jpg" width="150" height="100""></div>	
+			<div class="textobolo">
+			<li>Cupcakes chocolate.</li>
+			<li>Preço: R$ 5,00.</li>
+			</div><!--textobolo-->
+			</div><!--b-->
+			
+			<div class="b">
+			<div class="imagem"><img src="cup2.jpg" width="150" height="100""></div>	
+			<div class="textobolo">
+			<li>Cupcakes baunilia.</li>
+			<li>Preço: R$ 5,00.</li>
+			</div><!--textobolo-->
+			</div><!--b-->	
+			
+			<div class="b">
+			<div class="imagem"><img src="cup3.jpg" width="150" height="100""></div>	
+			<div class="textobolo">
+			<li>Cupcakes frutas vermelhas.</li>
+			<li>Preço: R$ 5,00.</li>
+			</div><!--textobolo-->
+			</div><!--b-->
+
+			<div class="b">
+			<div class="imagem"><img src="cup4.jpg" width="150" height="100""></div>	
+			<div class="textobolo">
+			<li>Cupcakes morango.</li>
+			<li>Preço: R$ 5,00.</li>
+			</div><!--textobolo-->
+			</div><!--b-->
+
+			<div class="b">
+			<div class="imagem"><img src="cup5.jpg" width="150" height="100""></div>	
+			<div class="textobolo">
+			<li>Cupcakes Bluebarry.</li>
+			<li>Preço: R$ 5,00.</li>
+			</div><!--textobolo-->
+			</div><!--b-->
+
+
+		</div>
+		<div id='secao'>
+			<a name='secao3'><h2>Doces</h2></a>
+			
+			<div class="b">
+			<div class="imagem"><img src="trufas.jpg" width="150" height="100""></div>
+			<div class="textobolo">
+			<li>Trufas.</li>
+			<li>Preço: R$ 2,50.</li>
+			</div><!--textobolo-->
+			</div><!--b-->
+						
+			<div class="b">
+			<div class="imagem"><img src="donout.jpg" width="150" height="100""></div>
+			<div class="textobolo">
+			<li>Donout.</li>
+			<li>Preço: R$ 8,00.</li>
+			</div><!--textobolo-->
+			</div><!--b-->	
+						
+			<div class="b">
+			<div class="imagem"><img src="brigadeiro.jpg" width="150" height="100""></div>
+			<div class="textobolo">
+			<li>Brigadeiro, Beijinho, Bicho de pé, Confetes.</li>
+			<li>Preço: R$ 1,50.</li>
+			</div><!--textobolo-->
+			</div><!--b-->
+			<div class="b">
+			<div class="imagem"><img src="sonhos.jpg" width="150" height="100""></div>
+			<div class="textobolo">
+			<li>Sonho.</li>
+			<li>Preço: R$ 4,00.</li>
+			</div><!--textobolo-->
+			</div><!--b-->
+			<div class="b">
+			<div class="imagem"><img src="bombons.jpg" width="150" height="100""></div>
+			<div class="textobolo">
+			<li>Bombons.</li>
+			<li>Preço: R$ 2,00.</li>
+			</div><!--textobolo-->
+			</div><!--b-->
+		</div>
+		<div id='secao'>
+			<a name='secao4'><h2>Encomenda</h2></a>
+				<fieldset><legend>Peça aqui!!!</legend>
+				<form action="javascript: pedido;">
+					Realize seu pedido na melhor casa de bolo da região.
+					<br>
+					<textarea placeholder='Digite seu pedido aqui' id="caixapedido"></textarea>
+					<br>
+					Nome:<input type='text' name='txtnome' id='txtnome' placeholder='Zezim Peira Silva'>
+					<br>
+					Endereço:<input type='text' name='txtendereco' id='txtendereco' placeholder='rua, numero, complemento'>
+					<br>
+					Telefone:<input type='text' name='txttel' id='txttel' placeholder='(11) 91010-1010'>
+					<br>
+					<input type="button" onclick="pedido('caixapedido','txtnome','txtendereco','txttel');" value='Completar pedido'>
+				</form>
+				</fieldset>
+		</div>
+	</body>
+</html>

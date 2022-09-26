@@ -1,0 +1,69 @@
+.telas{
+
+    width: 100%;
+    height: 100%;
+}
+body {
+    
+    padding: 500px 100px;
+}
+
+
+nav {
+   
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+li{
+    text-align: center;
+    color:#fff;
+}
+  h1 {
+
+    text-align: center;
+    font-size: 78px;
+    text-transform: uppercase;
+    color:#fff;
+
+}
+
+ ul {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    
+}
+    
+ ul li {
+
+    list-style: none;
+    width: (100%/5) ; 
+    height:100%;
+    float: left;
+    
+}
+
+
+ul li a{
+    display:inline-block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:black
+}
+
+ul li a:hover{
+
+    background-attachment: #ff5722;
+
+
+}

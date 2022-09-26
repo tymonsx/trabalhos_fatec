@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="video.png">
+    <link rel="stylesheet" href="Site.css">
+
+
+    <title>Pl4yon</title>
+</head>
+
+
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+    </style>
+
+    <div class="responsividade">
+
+
+        <div class="navbar" style="position: fixed; width: 100%; margin: 0;">
+            <a href="#home">Home</a>
+            <a href="#musicas">Downloads</a>
+            <div class="dropdown">
+                <button class="dropbtn">Bandas
+          <i class="fa fa-caret-down"></i>
+        </button>
+        
+                <div class="dropdown-content">
+                    <a href="#Imagine">Imagine dragons</a>
+                    <a href="#Coldplay">Coldplay</a>
+                    <a href="#maroon">Maroon-5</a>
+
+                </div>
+            </div>
+        </div>
+
+        <a name="home"></a>
+        <h1 class="main" style="text-align: center; color: white;">
+            Welcome to Pl4yOn
+        </h1>
+
+
+
+        <div class="fundo-slide">
+
+
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade centro">
+                    <div class="numbertext">1 / 4</div>
+                    <a href="#Coldplay"><img src="cold.jpg"></a>
+                    <div class="text">Coldplay</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <a href="#Imagine"><img src="imd.jpg" style="width:90% ; margin: auto; width: 50%;display: flex;"></a>
+                    <div class="text">Imagine Dragons</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <a href="#maroon"><img src="maroon5.jpg"></a>
+                    <div class="text">Maroon 5</div>
+                </div>
+
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)"> <img src="SETA E.PNG" width="20PX"></a>
+                <a class="next" onclick="plusSlides(1)"> <img src="SETA D.png" alt="" srcset="" width="20px"></a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+
+            </div>
+        </div>
+
+
+        <br>
+        <div class="Conteudo">
+            <h2>
+                Quem Somos?
+            </h2>
+            <p> Somos um Site com diversas sugestões de músicas das melhores bandas atualmente , <br> espero que vocês tenham bom gosto pois nós somos<br> a pl4yOn onde só há bom gosto. </p>
+        </div>
+        <br>
+        <h2 class="titulos">
+            <a name="Imagine"></a>Imagine Dragons
+        </h2>
+
+        <div class="borda">
+            <img src="https://pbs.twimg.com/media/FNlguO8UYAEFalP?format=jpg&name=900x900" alt="Membros do Imagine Dragons" width="359px">
+        </div>
+        <br>
+        <h2 class="info">Informações</h2>
+        <section class="Conteudo">
+            <h3>Sobre:</h3>
+            <p>A banda surgiu em Las Vegas no ano de 2008 com o estilo Indie Rock. O nome da banda é um anagrama, segundo explica o guitarrista Wayne Sermon: “Nós tínhamos essa frase, mas não queríamos chamar a banda assim, então concordamos em mudar as
+                letras de lugar e surgiu Imagine Dragons. Nós não dissemos sequer a nossas mães o que era a frase. Como artista você coloca tanto de si mesmo pra fora, que é divertido ter alguma que você mantenha em segredo”.</p>
+
+            <h3>Membros:</h3>
+            <p>
+                A banda é constituída pelo vocalista Dan Reynolds, guitarrista Wayne Sermon, baixista Ben Mckee e do baterista Daniel Platzman.
+            </p>
+
+            <h3>Curiosidades:</h3>
+            <h4>Radioactive:</h4>
+            <p>Radioactive foi o primeiro grande sucesso da banda a entrar no top 10 do Billboard Hot 100, permanecendo no ranking por 87 semanas 😱. O single também foi indicado a duas categorias do Grammy Awards e venceu a de melhor performance de rock.</p>
+            <p>Se liga nesse som Abaixo:</p>
+            <audio controls class="sons">
+
+    <source src="musicas/Radioactive.mp3">
+  </audio>
+        </section>
+
+
+
+        <a name="Coldplay"></a>
+        <h2 class="titulos">Coldplay</h2>
+        <div class="borda">
+            <img src="https://radioregional.pt/wp-content/uploads/2018/11/os-coldplay-mudaram-de-nome-agora-chamam-se-los-unidades-1.jpg" alt="" width="355px" height="250px">
+        </div>
+
+        <h2 class="info">Informações</h2>
+        <section class="Conteudo">
+            <h3>Sobre:</h3>
+            <p>Coldplay é uma banda britânica de rock alternativo fundada em 1996 na Inglaterra pelo vocalista e pianista Chris Martin e o guitarrista Jonny Buckland no University College London. Depois de formar o Pectoralz, Guy Berryman se juntou ao grupo
+                como baixista e eles mudaram o nome para Starfish..</p>
+
+            <h3>Membros:</h3>
+            <p>
+                Jonny Buckland, Will Champion, Chris Martin e Guy Berryman. Coldplay alcançou fama mundial com o lançamento da canção "Yellow" em 2000, seguido por seu álbum de estreia lançado no mesmo ano, Parachutes, que foi nomeado para o Mercury Prize.
+            </p>
+
+            <h3>Curiosidades:</h3>
+            <p>
+                Os membros do Coldplay se conheceram na Universidade de Londres em 1996. Os primeiros membros da banda foram o cantor e pianista Chris Martin e o guitarrista Jonny Buckland, e a banda se chamava Pectoralz. O segundo nome da banda era Starfish, depois
+                que Guy Berryman se juntou à banda como baixista
+            </p>
+            <h3>Yellow</h3>
+            <p>
+                Inspirado pela visão do céu estrelado e com a melodia principal da música na cabeça, Chris Martin começou a esboçar o que viria a ser Yellow. No entanto, naquela hora ele ainda não estava levando a canção a sério e cantou a ideia para a banda “em sua
+                pior imitação de voz de Neil Young”.
+            </p>
+            <p>Se liga nesse som Abaixo:</p>
+            <audio controls class="sons">
+         <source src="musicas/Coldplay - Yellow (Official Video)(MP3_70K).mp3">
+       </audio>
+            <br>
+            <hr>
+        </section>
+
+        <a name="maroon"></a>
+        <h2 class="titulos">Maroon 5</h2>
+        <div class="borda">
+            <img src="https://i0.wp.com/2gomobility.com/wp-content/uploads/2020/01/Maroon-5.jpg?fit=550%2C350&ssl=1" width="355px" srcset="">
+        </div>
+
+
+
+        <h2 class="info">Informações</h2>
+        <section class="Conteudo">
+            <h3>Sobre:</h3>
+
+            <p>Conhecido hoje por uma sonoridade pop que mistura rock com soul, o Maroon 5 tem suas raí­zes em outra banda. O vocalista Adam Levine, o tecladista Jesse Carmichael, o baixista Mickey Madden e o baterista Ryan Dusick ainda frequentavam o colegial
+                em Los Angeles, no estado da Califórnia, quando resolveram montar uma banda. O grupo formado na segunda metade da década de 90 foi batizado de Kara"™s Flowers e fazia um rock carregado nas guitarras, influenciado por bandas como Nirvana
+                e Pearl Jam e bem diferente do que viria a ser o Maroon 5. A banda chamou a atenção da Reprise Records que acabou por lançar o primeiro disco da banda, Fourth World, em 1997.</p>
+
+            <h3>Membros:</h3>
+            <p>
+                O vocalista Adam Levine, o tecladista Jesse Carmichael, o baixista Mickey Madden e o baterista Ryan Dusick ainda frequentavam o colegial em Los Angeles, no estado da Califórnia, quando resolveram montar uma banda.
+            </p>
+
+            <h3>Curiosidades:</h3>
+            <p>
+                O nome da primeira banda formada pelos integrantes de Maroon 5, a Kara's Flowers, surgiu por causa de uma garota que Jesse gostava. No seu aniversário, ele resolveu mandar-lhe um buquê de flores e daí veio Kara's Flowers, ou seja, as flores de Kara, o
+                nome da menina. Adam Levine pratica Ioga antes dos shows.
+            </p>
+
+            <h3>Sugar</h3>
+            <p>
+                A canção originalmente foi escrita pelo cantor Mike Posner para seu álbum "Pages". Adam Levine ouviu a música na época e perguntou se poderia gravá-la com sua banda. Posner negou o pedido do vocalista. Depois de mudar de gravadora, o cantor desistiu de
+                lançar "Pages" e "Sugar". Posner então decidiu presentear Levine com a música que ele havia pedido para o próximo álbum do Maroon 5. "Quando eles gravaram a música, Adam adicionou seu "tempero" e escreveu novas coisas na letra e na melodia.
+                Ele cantou a música muito bem. Sou um grande fã, então fiquei feliz que eles lançaram a música", contou Posner.</p>
+            <p>Se liga nesse som Abaixo:</p>
+            <audio controls class="sons">
+   <source src="musicas/Sugar.mp3">
+ </audio>
+            <br>
+            <hr>
+        </section>
+
+
+        <div class="botao dowloads">
+
+            <a name="musicas"></a>
+            <h1 class="titulos">Downloads</h1>
+            <h3 class="info">Informações</h3>
+            <section class="Conteudo desc">
+                <p>Selecione sua banda e Aperte o botão para Escutar sua música Favorita deles e ver o video deles!!</p>
+            </section>
+
+            <br>
+            <button class="collapsible">Imagine Dragons</button>
+            <div class="content">
+                <ul>
+                    <br>
+                    <li>Enemy</li>
+                    <p>
+                        <a href="https://youtu.be/D9G1VOjN_84" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+                    <img src="logo_musicas/Enemy_Imagine_Dragons_JID_capa.jpg" width="300px" alt="">
+
+                    <br>
+                    <audio controls>
+      <source src="musicas/Enemy (from the series Arcane League of Legends)(MP3_128K).mp3">
+      </audio>
+
+                    <li>Believer</li>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=7wtfhZwyrcc" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+
+                    <img src="logo_musicas/believer.jpg" width="300px" height="300px" alt="">
+                    <br>
+                    <audio controls>
+                    <source src="musicas/Imagine Dragons - Believer (Official Music Video)(MP3_70K).mp3">
+                    </audio>
+
+                    <li>Sharks</li>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=Te3_VlimRw0" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+
+                    <img src="https://i0.wp.com/popnow.com.br/wp-content/uploads/2022/06/FV_SZX0VsAA09OC-scaled.jpeg?resize=740%2C740&ssl=1" width="300px" alt="">
+                    <br>
+                    <audio controls>
+      <source src="musicas/Sharks(MP3_128K).mp3">
+      </audio>
+
+                    <li>Blur</li>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=so23_c7lXno" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+
+                    <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/3/c/5/0/01656673102.jpg" width=300px alt="">
+                    <br>
+                    <audio controls>
+      <source src="musicas/Blur(MP3_128K).mp3">
+      <br>
+      </audio>
+
+                    <li>Bones</li>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=TO-_3tck2tg" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+
+                    <img src="https://lastfm.freetls.fastly.net/i/u/500x500/d389b69fb51be8d9c14ba7dce7985cb1.jpg" width=300px alt="">
+                    <br>
+                    <audio controls>
+      <source src="musicas/Bones(MP3_128K).mp3">
+      <br>
+      </audio>
+                </ul>
+            </div>
+
+            <br>
+
+
+
+            <button class="collapsible"> Coldplay </button>
+            <div class="content">
+                <ul>
+                    <li> Sky of full Star</li>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=VPRjCeoBqrI" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+
+                    <img src="https://lastfm.freetls.fastly.net/i/u/ar0/2bf2a1d2dbeb48f6c827e8a3d8601044" width=300px alt="">
+                    <br>
+                    <audio controls>
+                  <source src="musicas/Coldplay - A Sky Full Of Stars (Official Video)(MP3_70K).mp3">
+    <br>
+            </audio>
+
+                    <li>Viva la vida</li>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=dvgZkm1xWPE" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+
+                    <img src="https://lastfm.freetls.fastly.net/i/u/ar0/b20449371f4faa0f2a66ad12a6c7551e" width=300px alt="">
+                    <br>
+                    <audio controls>
+                <source src="musicas/Coldplay - Viva La Vida (Official Video)(MP3_70K).mp3">
+    <br>
+            </audio>
+
+                    <li>Yellow</li>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=yKNxeF4KMsY" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+
+                    <img src="https://lastfm.freetls.fastly.net/i/u/ar0/646ccd36b0804e34a38ea5df5d9e4e4d" width=300px alt="">
+                    <br>
+                    <audio controls>
+                <source src="musicas/Coldplay - Yellow (Official Video)(MP3_70K).mp3">
+    <br>
+             </audio>
+
+                    <li>Paradise</li>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=1G4isv_Fylg" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+
+                    <img src="https://upload.wikimedia.org/wikipedia/pt/2/22/Coldplay_-_Paradise.JPG" width=300px alt="">
+                    <br>
+                    <audio controls>
+                <source src="musicas/Coldplay - Paradise (Official Video)(MP3_70K).mp3">
+    <br>
+            </audio>
+
+                    <li>Something Just Like This</li>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=FM7MFYoylVs" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+
+                    <img src="https://vivacoldplay.com/wp-content/uploads/2020/11/Something-just-like-this-1.jpg" width=300px alt="">
+                    <br>
+                    <audio controls>
+                <source src="musicas/The Chainsmokers _ Coldplay - Something Just Like This (Lyric)(MP3_70K).mp3">
+    <br>
+              </audio>
+                    </li>
+                </ul>
+            </div>
+
+            <br>
+            <button class="collapsible"> Maroon 5 </button>
+
+            <div class="content">
+                <ul>
+                    <li>Maps</li>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=Y7ix6RITXM0" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+
+                    <img src="https://i.pinimg.com/originals/a1/89/e8/a189e873852910882a4fc44b903d3ee3.jpg" width="300px" alt="">
+                    <br>
+                    <audio controls>
+      <source src="musicas/Maps.mp3">
+      <br>
+      </audio>
+
+                    <li>Payphone</li>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=KRaWnd3LJfs" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+
+                    <img src="https://akamai.sscdn.co/uploadfile/letras/albuns/3/b/7/1/26148.jpg" width="300px" alt="" srcset="">
+                    <br>
+                    <audio controls>
+    <source src="musicas/Payphone.mp3">
+    <br>
+    </audio>
+
+                    <li>Animals</li>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=qpgTC9MDx1o" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+
+                    <img src="https://i.pinimg.com/564x/7d/3e/a1/7d3ea14323cca9903b8addf1195b4f06--maroon--cas.jpg" width="300px" alt="" srcset="">
+                    <br>
+                    <audio controls>
+    <source src="musicas/Animals.mp3">
+    <br>
+    </audio>
+
+                    <li>Girls Like you</li>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=aJOTlE1K90k" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+
+                    <img src="https://www.maroon5br.com/site/wp-content/uploads/2018/06/M5BR-GirlsLikeYou-450x300.png" width="300px" alt="" srcset="">
+                    <br>
+                    <audio controls>
+    <source src="musicas/girls like you.mp3">
+    <br>
+    </audio>
+
+                    <li>Sugar</li>
+                    <p>
+                        <a href="https://www.youtube.com/watch?v=09R8_2nJtjg" target="_blank"><input type="button" class="baixar" value="Aperte aqui" onclick="myFunction()"></a>
+                    </p>
+
+                    <img src="https://www.vagalume.com.br/dynimage/news21127-big.jpg" width="300px" alt="" srcset="">
+                    <br>
+                    <audio controls>
+     <source src="musicas/Sugar.mp3">
+    <br>
+    </audio>
+
+                </ul>
+            </div>
+
+
+        </div>
+
+        <script src="Site.js"></script>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Reposição</title>
+    <link rel='stylesheet' type='text/css' href='Style.css'>
+    
+
+
+    <script>
+
+function participar(id){
+			var objEmail=document.getElementById(id);
+			alert('Seu email foi enviado! Obrigado por participar! ' + objEmail.value);
+		}
+
+
+
+    </script>
+    
+</head>
+
+<body background="Eldenbackg.jpg" >
+    
+
+    <div id='cabecalho' >
+        <h1>Elden Ring</h1>
+        <div ><img id="logo" src="eldenlogonova.jpg" a href="secao1"></div>
+        <div id='cabecalho2'><img id="logo2" src="eldenlogonova.jpg" a href="secao1"></div>
+        <div id='menu'>
+            <ul>
+                <li><a href='#secao1'>Oque é</a></li>
+                <li><a href='#secao2'>Dicas</a></li>
+                <li><a href='#secao3'>Onde encontrar</a></li>
+                <li><a href='#secao4'>Concurso</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id='secao1'>
+        <a name='secao1'><h3>Oque é elden Ring</h3></a>
+        <p>		
+ O NOVO RPG DE AÇÃO E FANTASIA.<br>
+Levante-se, Maculado, e seja guiado pela graça para portar o poder do Anel Prístino e se tornar um Lorde Prístino nas Terras Intermédias.<br>
+
+ Um mundo vasto e emocionante<br>
+Um mundo vasto onde campos abertos e uma variedade de situações e masmorras imensas, com complexos designs tridimensionais se conectam com fluidez. Conforme explora, sinta a alegria de descobrir poderosas e desconhecidas ameaças que aguardam por você, levando a um grande senso de conquista.<br>
+
+ Crie seu próprio personagem<br>
+Além de personalizar a aparência do seu personagem, você pode combinar livremente armas, armaduras e magias que equipar. Você pode desenvolver seu personagem de acordo com seu estilo de jogo, como aumentar a força muscular para se tornar um poderoso guerreiro, ou dominar a magia.<br>
+
+ Um drama épico nascido de um mito<br>
+Uma história cheia de camadas, contada em fragmentos. Um drama épico onde os vários pensamentos dos personagens se interligam nas Terras Intermédias.
+
+ Jogo on-line único que conecta você livremente aos outros<br>
+Além do multijogador, onde você pode se conectar diretamente com outros jogadores e viajarem juntos, o jogo suporta um elemento on-line assíncrono único que permite que você sinta a presença dos outros.<br>
+
+
+            <div class='videotrailer'> <!-- Implementação do video usando Ifreme, defini a posição e o tamanho do video que fica no centro da pagina -->
+                <iframe name="videotrailer" center width="500" height="400" src="https://www.youtube.com/embed/T6EcJ6Sv5Ns" title="Elden Ring Cinematic Trailer | Game Awards 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" center allowfullscreen></iframe>
+            </div>
+
+        </p>
+    </div>
+    <div id='secao2'>
+        <a name='secao2'><h2>Mapa do jogo</h2></a>
+        <p>		
+            Abaixo vemos o mapa do jogo completamente liberado!<br>
+            Voce pode usa-lo para se guiar em sua jornada.<br>
+            
+        </p>
+        <center><img src="eldenmap.jpg" ></center>
+        
+    </div>
+    <div id='secao3'>
+        <a name='secao3'><h2>Onde encontrar o jogo</h2></a>
+        <p>		
+            O jogo pode ser encontrado em diversas plataformas algumas delas podem ser.<br>
+
+            <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/"> Steam</a> para jogadores do computador<br>
+            <a href="https://www.playstation.com/pt-br/games/elden-ring/"> Playstation  </a> Para jogadores de playstation<br>
+            <a href="https://www.xbox.com/pt-BR/games/elden-ring"> Xbox </a> para jogadores de xbox<br>
+            Vamos lembrar que cada plataforma tem seu respectivo servidor não contendo crossplay.<br>
+        </p>
+    </div>
+    <div id='secao4'>
+        <a name='secao4'><h2>Mande suas screenshots para participar do concurso</h2></a>
+        <p>		
+            Abaixo temos algumas imagens do concurso de screenshots.<br>
+            Tente ser criativo e aproveite ao maximo o cenario incrivel que o jogo possui!.<br>
+            <img src="screenshot1.jpg" height= 500x ><br>
+            <img src="screenshot2.jpg" height= 500x ><br>
+            <img src="screenshot3.jpg" height= 500x ><br>
+
+        </div>
+
+        <div>
+            <fieldset><legend>Preencha o email o formulario abaixo</legend>
+            <form action="javascript: participar('txtEmail');">
+                <p>Para participar do concurso apenas preencha o formulario e anexe a imagem junto.<br></p>
+                E-mail:<input type='text' name='txtEmail' id='txtEmail' placeholder='meuemail@provedor.com'><br>
+                Nome:<input type='text' name='txtNome' id='txtNome' placeholder='Digite seu Nome'><br>
+                Idade:<input type='text' name='txtIdade' id='txtIdade' placeholder='Digite sua idade'><br>
+                Numero:<input type='text' name='txtnum' id='txtnum' placeholder='Digite seu numero'><br>
+                <input type='submit' value='Participar'>
+            </form>
+            </fieldset>
+        </p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,144 @@
+<html>
+
+<head>
+	<title>Mercearia Bom Preço</title>
+	<meta charset='utf-8'>
+	<link rel='stylesheet' type='text/css' href='mercearia.css'>
+	<link rel="icon" type="image/x-icon" href="logo_mercearia.png">
+	<script>
+		function apareceDesaparece(id) {
+			var obj = document.getElementById(id);
+			if (obj.style.display != "block") {
+				obj.style.display = "block";
+			}
+			else {
+				obj.style.display = "none";
+			}
+		}
+
+		function increver(id) {
+			var objEmail = document.getElementById(id);
+			alert('Obrigado por se inscrever! ' + objEmail.value);
+		}
+
+	</script>
+</head>
+
+<body>
+	<div id='cabecalho'>
+		<h1>Mercearia Bom Preço</h1>
+		<div id='mercearia'>
+			<a href="javascript:apareceDesaparece('menu');"><img src='logo_mercearia.png'></a>
+		</div>
+		<div id='menu'>
+			<ul>
+				<li><a href='#secao1'>Carnes</a></li>
+				<li><a href='#secao2'>Hortifruti</a></li>
+				<li><a href='#secao3'>Higiene</a></li>
+				<li><a href='#secao4'>Alimentos em Geral</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="secao01">
+		<a name="secao01">
+			<h2>Carnes</h2>
+		</a>
+	</div>
+	<div id='secao1'>
+		<a name='secao1'>
+		</a>
+		<figure>
+			<img src="picanha.png">
+			<figcaption>Picanha - R$69,90 (kg)</figcaption>
+		</figure>
+		<figure>
+			<img src="contra_file.png">
+			<figcaption>Contra Filé - R$39,90 (kg)</figcaption>
+		</figure>
+		<figure>
+			<img src="alcatra.png">
+			<figcaption>Alcatra - R$40,90 (kg)</figcaption>
+		</figure>
+		<figure>
+			<img src="costela.png">
+			<figcaption>Costela Bovina - R$34,90</figcaption>
+		</figure>
+	</div>
+	<div id='secao02'>
+		<a name='secao02'>
+			<h2>Hortifruti</h2>
+		</a>
+	</div>
+	<div id='secao2'>
+		<a name='secao2'>
+		</a>
+		<figure>
+			<img src="maca.png">
+			<figcaption>Maçã Fuji - R$8,00 (kg)</figcaption>
+		</figure>
+		<figure>
+			<img src="uva.png">
+			<figcaption>Uva Itália - R$10,00 (kg)</figcaption>
+		</figure>
+		<figure>
+			<img src="mexerica.png">
+			<figcaption>Tangerina Ponkan - R$5,50 (kg)</figcaption>
+		</figure>
+		<figure>
+			<img src="mamao.png">
+			<figcaption>Mamão Formosa - R$6,90 (kg)</figcaption>
+		</figure>
+	</div>
+	<div id='secao03'>
+		<a name='secao03'>
+			<h2>Higiene</h2>
+		</a>
+	</div>
+	<div id='secao3'>
+		<a name='secao3'>
+		</a>
+		<figure>
+			<img src="papel.png">
+			<figcaption>Papel Higiênico Folha dupla com 12 rolos - R$12,00</figcaption>
+		</figure>
+		<figure>
+			<img src="sabonete.png">
+			<figcaption>Sabonete - R$1,90 (Unidade)</figcaption>
+		</figure>
+		<figure>
+			<img src="lixa.png">
+			<figcaption>Lixa de Unha - R$0,09 (Unidade)</figcaption>
+		</figure>
+	</div>
+	<div id='secao04'>
+		<a name='secao04'>
+			<h2>Alimentos em Geral</h2>
+		</a>
+	</div>
+	<div id='secao4'>
+		<a name='secao4'>
+		</a>
+		<figure>
+			<img src="chocolate.png">
+			<figcaption>Barra de Chocolate (100g) - R$7,00</figcaption>
+		</figure>
+		<figure>
+			<img src="arroz.png">
+			<figcaption>Arroz (1kg) - R$4,50</figcaption>
+		</figure>
+		<figure>
+			<img src="feijao.png">
+			<figcaption>Feijão (1kg) - R$9,00</figcaption>
+		</figure>
+		<fieldset>
+			<legend>Inscreva-se</legend>
+			<form action="javascript: increver('txtEmail');">
+				Inscreva-se agora na nossa newsletter e receba informações sobre nossas novidades em primeira mão.<br>
+				E-mail:<input type='text' name='txtEmail' id='txtEmail' placeholder='meuemail@provedor.com'><br>
+				<input type='submit' value='Inscrever-se'>
+			</form>
+		</fieldset>
+	</div>
+</body>
+
+</html>
